@@ -313,6 +313,21 @@ figure.shot figcaption{font-size:12.5px;font-weight:500;color:var(--jade);margin
 .quote cite{display:block;margin-top:14px;font-style:normal;font-size:12px;font-weight:600;
   letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
 .band--dark .quote cite{color:var(--brass)}
+/* A white card inside a dark band is still a LIGHT surface —
+   restore light-section colours for anything nested inside it,
+   otherwise the dark-band rules render white text on white. */
+.band--dark .evt .quote,
+.band--dark .on-light .quote{background:var(--butter-18);border-left-color:var(--brass)}
+.band--dark .evt .quote p,
+.band--dark .on-light .quote p{color:var(--forest)}
+.band--dark .evt .quote cite,
+.band--dark .on-light .quote cite{color:var(--jade)}
+.band--dark .evt figure.shot figcaption,
+.band--dark .on-light figure.shot figcaption{color:var(--jade)}
+.band--dark .evt .eyebrow,
+.band--dark .on-light .eyebrow{color:var(--jade)}
+.band--dark .evt .eyebrow::after,
+.band--dark .on-light .eyebrow::after{background:var(--rule)}
 
 /* ── CALLOUTS ───────────────────────────────────────────── */
 .note{padding:20px 24px;border-radius:var(--r-md);font-size:14.5px;line-height:1.65;margin:20px 0}
@@ -530,7 +545,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
         <div class="hero-chips">
           <span class="chip">Reporting period <b>Apr&ndash;Jun 2026</b></span>
           <span class="chip">Prepared by <b>Finance Department</b></span>
-          <span class="chip"><b>48</b> NNs reporting</span>
+          <span class="chip"><b>72</b> NNs reporting</span>
         </div>
       </div>
       <div class="mosaic">
@@ -574,7 +589,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 
     <div class="letter rv">
       <div style="margin-bottom:24px">
-        <img src="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" alt="Bismillah ir-Rahman ir-Raheem" style="width:170px;margin-bottom:10px">
+        <img src="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/bismillah.svg" alt="Bismillah ir-Rahman ir-Raheem" style="width:170px;margin-bottom:10px">
         <div style="font-size:15px;color:var(--ink-2)">We begin in the name of Allah <span lang="ar" style="color:var(--brass);font-size:1.1em">&#xFDFB;</span> and send peace and blessings upon His Messenger <span lang="ar" style="color:var(--brass);font-size:1.1em">&#xFDFA;</span></div>
       </div>
 
@@ -627,7 +642,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
       </div>
       <div class="stat">
         <div class="stat-k">Active NNs Submitting</div>
-        <div class="stat-v"><span data-count="48">48</span> <small>/ 170+</small></div>
+        <div class="stat-v"><span data-count="72">72</span> </div>
         <div class="stat-f"></div>
       </div>
       <div class="stat b-butter">
@@ -812,7 +827,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
       <div class="rule"></div>
     </div>
 
-    <div class="rv" style="background:#fff;border-radius:var(--organic);padding:34px 36px;color:var(--ink)">
+    <div class="rv on-light" style="background:#fff;border-radius:var(--organic);padding:34px 36px;color:var(--ink)">
       <div class="eyebrow" style="color:var(--jade)">NN Spotlight &mdash; Maine</div>
       <h3 class="display" style="font-size:clamp(24px,3.4vw,36px);color:var(--forest);margin:16px 0 14px">A Maine NeighborNet wins a $45,000 grant</h3>
       <p style="font-size:16px;color:var(--ink-2);line-height:1.7;max-width:66ch">A NeighborNet in Maine applied for outside grant funding &mdash; and got it. The award is <strong style="color:var(--forest)">$45,000 total, paid out at $15,000 a year</strong>, giving the chapter three years of programming money that didn't come from dues, bake sales, or National.</p>
@@ -853,7 +868,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
         <h3>Sarah (TX, Chicago) &amp; Ayra (VA)</h3>
         <div class="gallery g2" style="margin-top:16px">
           <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/230E7933-BA75-4C10-8164-68400729583B-scaled.jpeg" alt="National Shura tour in Georgia"></span></figure>
-          <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.42.34-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span></figure>
+          <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/947A2A8F-47F6-4ED5-9C2C-EECD7ED48038-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span></figure>
         </div>
       </article>
     </div>
@@ -871,7 +886,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     </div>
 
     <div class="note butter rv">
-      <strong>The NN Finance Handbook is here! &#127881;</strong> We're excited to announce the release of the <strong>NN Finance Handbook</strong> &mdash; your complete guide to accounts, JotForm submission types, dashboards, approvals, lump sums, audits, and a full worked case study. <a href="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/" target="_blank" rel="noopener">Read it here &rarr;</a>
+      <strong>The NN Finance Handbook is here! &#127881;</strong> We're excited to announce the release of the <strong>NN Finance Handbook</strong> &mdash; your complete guide to accounts, JotForm submission types, dashboards, approvals, lump sums, audits, and a full worked case study. <a href="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" target="_blank" rel="noopener">Read it here &rarr;</a>
     </div>
 
     <h3 class="rv" style="margin:40px 0 18px;font-size:20px;color:var(--forest)">Friendly policy reminders</h3>
@@ -917,7 +932,12 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
       <span class="search-ico">&#9906;</span>
       <input class="search" id="nnSearch" type="search" autocomplete="off" placeholder="Search your NeighborNet or region&hellip;" aria-label="Search NeighborNets">
     </div>
-  
+    <div class="sort-row rv">
+      <span class="lbl">Sort</span>
+      <button class="sort-btn" data-sort="name" aria-pressed="true">A&ndash;Z</button>
+      <button class="sort-btn" data-sort="high" aria-pressed="false">Highest balance</button>
+      <button class="sort-btn" data-sort="low" aria-pressed="false">Lowest balance</button>
+    </div>
 
     <div id="nnResults" class="rv"><div class="nn-msg">Loading NN data&hellip;</div></div>
 
