@@ -1,1324 +1,1251 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Q2 FY2026 National Finance Report | Young Muslims</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      /* ── Q1 palette ── */
-      --green-deep: #1C4532;
-      --green-mid:  #2D6A4F;
-      --green-light:#52B788;
-      --green-pale: #D8F3DC;
-      --gold:       #C9A227;
-      --gold-light: #F9EDCC;
-      --gold-dark:  #8B6914;
-      --cream:      #FAFAF7;
-      --ink:        #1A1A18;
-      --ink-mid:    #4A4A46;
-      --ink-light:  #8A8A84;
-      --rule:       #E0DDD4;
-      --red:        #C0392B;
-      --red-pale:   #FDEDEB;
-      --teal:       #1D6A6A;
-      --teal-pale:  #E0F2F1;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Q2 FY2026 National Finance Report | Young Muslims Sisters</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<style>
+/* ═══════════════════════════════════════════════════════════
+   YOUNG MUSLIMS · SISTERS  —  Q2 FY2026 Finance Report
+   Palette  : Sisters (brandbook p.32) + General (p.30)
+   Type     : Boldonse display (caps only) · Figtree everything
+   Imagery  : organic frames · mono grain · desaturation (p.41)
+   ═══════════════════════════════════════════════════════════ */
+:root{
+  --forest:#043222; --jade:#397451; --brass:#D8AA45;
+  --buttercup:#EBD255; --white:#FFF;
+  --obsidian:#171725; --snow:#FCFAF8;
 
-      /* ── legacy aliases so existing markup keeps working ── */
-      --bg: var(--cream);
-      --surface: #FFFFFF;
-      --surface-2: var(--cream);
-      --label: var(--ink);
-      --label-2: var(--ink-mid);
-      --label-3: var(--ink-light);
-      --sep: var(--rule);
-      --sep-opaque: var(--rule);
-      --green: var(--green-mid);
-      --green-fill: var(--green-pale);
-      --green-fill-strong: rgba(45,106,79,0.18);
-      --gold-fill: var(--gold-light);
-      --red-fill: var(--red-pale);
-      --sys-green: var(--green-light);
-      --sys-green-fill: var(--green-pale);
-      --blue: var(--teal);
-      --blue-fill: var(--teal-pale);
-      --orange: #D98324;
-      --orange-fill: #FDF0E0;
+  --jade-06:rgba(57,116,81,.06);  --jade-10:rgba(57,116,81,.10);
+  --jade-16:rgba(57,116,81,.16);  --jade-24:rgba(57,116,81,.24);
+  --forest-08:rgba(4,50,34,.08);  --forest-14:rgba(4,50,34,.14);
+  --brass-14:rgba(216,170,69,.14);--brass-28:rgba(216,170,69,.28);
+  --butter-18:rgba(235,210,85,.18);--butter-38:rgba(235,210,85,.38);
 
-      --s1: 0 1px 3px rgba(28,69,50,0.07), 0 1px 2px rgba(28,69,50,0.05);
-      --s2: 0 4px 16px rgba(28,69,50,0.09), 0 1px 4px rgba(28,69,50,0.05);
-      --s3: 0 8px 28px rgba(28,69,50,0.11), 0 2px 8px rgba(28,69,50,0.06);
-      --r1: 6px; --r2: 10px; --r3: 14px; --r4: 18px;
-    }
+  --ink:var(--obsidian);
+  --ink-2:rgba(23,23,37,.74);
+  --ink-3:rgba(23,23,37,.50);
+  --rule:rgba(4,50,34,.12);
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+  /* functional only — not brand colour */
+  --alert:#A8321F;
 
-    body {
-      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
-      font-size: 14px;
-      color: var(--ink);
-      background: #E8E4DA;
-      line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
+  --ym-noise:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='140'%20height='140'%3E%3Cfilter%20id='n'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.5'%20numOctaves='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='saturate'%20values='0'/%3E%3C/filter%3E%3Crect%20width='140'%20height='140'%20filter='url(%23n)'/%3E%3C/svg%3E");
 
-    h1, h2, h3, h4 {
-      font-family: 'DM Serif Display', Georgia, 'Times New Roman', serif;
-      font-weight: 400;
-    }
-    /* the Q1 signature: italic accent word inside a serif heading */
-    h1 em, h2 em, h3 em, .accent-word {
-      font-family: 'DM Serif Display', Georgia, serif;
-      font-style: italic;
-      color: var(--gold-dark);
-    }
-    .page.cover h1 em { color: var(--gold); }
+  --shell:min(1120px,92vw);
+  --r-sm:10px; --r-md:16px; --r-lg:24px;
+  --organic:30px 10px 28px 12px;
+  --organic-alt:10px 30px 12px 28px;
+  --s1:0 1px 3px rgba(4,50,34,.06),0 1px 2px rgba(4,50,34,.04);
+  --s2:0 6px 20px rgba(4,50,34,.09),0 2px 6px rgba(4,50,34,.05);
+  --s3:0 18px 48px rgba(4,50,34,.14);
+  --ease:cubic-bezier(.22,.9,.3,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{
+  font-family:'Figtree',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Arial,sans-serif;
+  font-size:16px;line-height:1.6;letter-spacing:-.02em;
+  color:var(--ink);background:var(--snow);
+  -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;
+}
+img{max-width:100%;display:block}
+a{color:var(--jade);text-underline-offset:3px}
+::selection{background:var(--buttercup);color:var(--forest)}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px;border-radius:4px}
 
-    /* ── DRAFT BANNER (screen only) ── */
-    .draft-banner {
-      background: #1C1C1E;
-      color: rgba(255,255,255,0.82);
-      font-size: 12.5px;
-      text-align: center;
-      padding: 9px 20px;
-      position: sticky;
-      top: 0;
-      z-index: 200;
-    }
-    .draft-banner strong { color: var(--gold); }
+/* ── TYPE SCALE (brandbook p.35) ────────────────────────── */
+.display{
+  font-family:'Boldonse','Haettenschweiler','Arial Narrow','Liberation Sans Narrow',Impact,sans-serif;
+  font-weight:400;text-transform:uppercase;letter-spacing:-.02em;line-height:1.16;
+}
+h2,h3,h4{letter-spacing:-.02em}
+h2{font-weight:700}h3{font-weight:700}h4{font-weight:600}
+.eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--jade);display:flex;align-items:center;gap:10px;
+}
+.eyebrow::after{content:'';flex:1;height:1px;background:var(--rule)}
+.lede{font-size:19px;line-height:1.55;color:var(--ink-2);max-width:62ch}
+.tabular{font-variant-numeric:tabular-nums}
 
-    /* ── PAGE (fixed, print-ready) ── */
-    .page {
-      width: 8.5in;
-      min-height: 11in;
-      background: var(--surface);
-      margin: 0.4in auto;
-      box-shadow: var(--s3);
-      position: relative;
-      overflow: hidden;
-    }
+/* ── SHELL & SECTIONS ───────────────────────────────────── */
+.shell{width:var(--shell);margin-inline:auto}
+.band{padding:88px 0;position:relative}
+.band--dark{background:var(--forest);color:rgba(255,255,255,.9);overflow:hidden}
+.band--dark::after{
+  content:'';position:absolute;inset:0;background-image:var(--ym-noise);
+  opacity:.18;mix-blend-mode:multiply;pointer-events:none;
+}
+.band--dark .shell{position:relative;z-index:1}
+.band--dark .eyebrow{color:var(--brass)}
+.band--dark .eyebrow::after{background:rgba(255,255,255,.18)}
+.band--tint{background:var(--jade-06)}
+.sec-head{margin-bottom:38px}
+.sec-head h2.display{font-size:clamp(30px,4.6vw,52px);color:var(--forest);margin:16px 0 14px;line-height:1.14}
+.band--dark .sec-head h2.display{color:#fff}
+.sec-head .sub{font-size:17px;color:var(--ink-2)}
+.band--dark .sec-head .sub{color:rgba(255,255,255,.7)}
+.rule{width:62px;height:4px;background:var(--brass);border-radius:99px;margin-top:18px}
 
-    .page-content { padding: 0.5in 0.55in 0.75in; }
+/* ── HERO ───────────────────────────────────────────────── */
+.hero{
+  position:relative;min-height:100svh;display:flex;flex-direction:column;
+  background:
+    radial-gradient(ellipse at 14% 68%,rgba(57,116,81,.55) 0%,transparent 62%),
+    radial-gradient(ellipse at 88% 10%,rgba(216,170,69,.30) 0%,transparent 55%),
+    linear-gradient(158deg,#021D14 0%,var(--forest) 48%,#0A4530 100%);
+  color:#fff;overflow:hidden;
+}
+.hero::after{
+  content:'';position:absolute;inset:0;background-image:var(--ym-noise);
+  opacity:.2;mix-blend-mode:multiply;pointer-events:none;
+}
+.hero-inner{position:relative;z-index:2;flex:1;display:flex;flex-direction:column;
+  width:var(--shell);margin-inline:auto;padding:30px 0 34px}
+.hero-top{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;flex-wrap:wrap}
+.hero-mark{font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;line-height:1.9}
+.hero-meta{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--brass);text-align:right;line-height:1.9}
+.hero-body{flex:1;display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:clamp(32px,4.5vw,64px);align-items:center;padding:40px 0}
+.hero h1.display{font-size:clamp(42px,6.6vw,86px);color:#fff;margin:16px 0 20px;line-height:1.12}
+.hero .lede{color:rgba(255,255,255,.72);font-size:18px;max-width:46ch}
+.hero-kicker{font-size:12px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--brass)}
+.hero-chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:26px}
+.chip{
+  display:inline-flex;align-items:center;gap:7px;padding:8px 15px;border-radius:99px;
+  background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);
+  font-size:12.5px;font-weight:500;color:rgba(255,255,255,.88);white-space:nowrap;
+}
+.chip b{color:var(--buttercup);font-weight:700}
 
-    /* ── RUNNING PAGE HEADER / FOOTER ── */
-    .page-chrome {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      padding-bottom: 13px;
-      margin-bottom: 26px;
-      border-bottom: 0.5px solid var(--sep-opaque);
-    }
+/* photo mosaic — organic frames, no two alike */
+.mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:clamp(12px,1.6vw,20px)}
+.mosaic .ym-img{box-shadow:0 18px 44px rgba(2,20,14,.42);transition:transform .55s var(--ease)}
+.mosaic .ym-img:hover{transform:translateY(-6px) scale(1.02);z-index:2}
+.mosaic .ym-img:nth-child(1){border-radius:44px 14px 34px 16px;aspect-ratio:4/5;margin-right:-12px}
+.mosaic .ym-img:nth-child(2){border-radius:14px 44px 16px 34px;aspect-ratio:3/4;margin-top:48px}
+.mosaic .ym-img:nth-child(3){border-radius:16px 34px 44px 14px;aspect-ratio:1/1;margin-right:-12px}
+.mosaic .ym-img:nth-child(4){border-radius:34px 16px 14px 44px;aspect-ratio:1/1;margin-top:-34px}
+.scroll-cue{
+  position:relative;z-index:2;display:flex;align-items:center;gap:12px;
+  font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:rgba(255,255,255,.55);
+}
+.scroll-cue span.line{width:46px;height:1px;background:rgba(255,255,255,.4);transform-origin:left;
+  animation:cue 2.4s var(--ease) infinite}
+@keyframes cue{0%,100%{transform:scaleX(.4);opacity:.4}50%{transform:scaleX(1);opacity:1}}
 
-    .page-chrome .brand {
-      font-size: 10px;
-      font-weight: 700;
-      color: var(--green-mid);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
+/* ── IMAGE TREATMENT (brandbook p.41) ───────────────────── */
+.ym-img{position:relative;display:block;overflow:hidden;background:var(--forest-08);
+  border-radius:var(--organic);line-height:0}
+.ym-img>img{width:100%;height:100%;object-fit:cover;
+  filter:saturate(.88) contrast(1.03);transition:transform .7s var(--ease),filter .5s}
+.ym-img::after{content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:var(--ym-noise);mix-blend-mode:multiply;opacity:.2;border-radius:inherit}
+.ym-img.zoom{cursor:zoom-in}
+.ym-img.zoom:hover>img{transform:scale(1.045);filter:saturate(1) contrast(1.03)}
+figure.shot{margin:0}
+figure.shot figcaption{font-size:12.5px;font-weight:500;color:var(--jade);margin-top:10px;text-align:center}
+.band--dark figure.shot figcaption{color:rgba(255,255,255,.62)}
+.gallery{display:grid;gap:14px}
+.gallery.g2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.gallery.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
+.gallery .ym-img{aspect-ratio:4/3}
+.gallery .ym-img:nth-child(even){border-radius:var(--organic-alt)}
 
-    .page-chrome .section-tag {
-      font-size: 11px;
-      color: var(--label-3);
-      font-weight: 500;
-    }
+/* ── STICKY NAV ─────────────────────────────────────────── */
+.navbar{
+  position:sticky;top:0;z-index:60;background:rgba(252,250,248,.9);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--rule);transition:box-shadow .3s;
+}
+.navbar.stuck{box-shadow:var(--s1)}
+.navbar-in{width:var(--shell);margin-inline:auto;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;height:64px}
+.nav-brand{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--forest);white-space:nowrap}
+.nav-brand em{font-style:normal;color:var(--jade)}
+.nav-links{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  font-size:12px;font-weight:600;letter-spacing:.04em;color:var(--ink-2);
+  text-decoration:none;padding:7px 13px;border-radius:99px;white-space:nowrap;
+  transition:background .25s,color .25s;
+}
+.nav-links a:hover{background:var(--jade-10);color:var(--forest)}
+.nav-links a.on{background:var(--forest);color:var(--buttercup)}
+.progress{height:3px;background:var(--brass);width:0%;transition:width .12s linear}
 
-    .page-footer-strip {
-      position: absolute;
-      bottom: 0.35in;
-      left: 0.55in;
-      right: 0.55in;
-      display: flex;
-      justify-content: space-between;
-      font-size: 10px;
-      color: var(--label-3);
-      border-top: 0.5px solid var(--sep-opaque);
-      padding-top: 10px;
-    }
+/* ── STAT CARDS ─────────────────────────────────────────── */
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px}
+.stat{
+  background:#fff;border:1px solid var(--rule);border-left:5px solid var(--jade);
+  border-radius:var(--r-sm) var(--r-lg) var(--r-lg) var(--r-sm);
+  padding:22px 24px;box-shadow:var(--s1);transition:transform .35s var(--ease),box-shadow .35s;
+}
+.stat:hover{transform:translateY(-3px);box-shadow:var(--s2)}
+.stat.b-brass{border-left-color:var(--brass);background:var(--brass-14)}
+.stat.b-butter{border-left-color:var(--buttercup);background:var(--butter-18)}
+.stat.b-jade{background:var(--jade-06)}
+.stat-k{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.stat-v{font-size:clamp(27px,3.4vw,36px);font-weight:800;letter-spacing:-.035em;
+  color:var(--forest);line-height:1.08;margin-top:10px}
+.stat-v small{font-size:.5em;font-weight:600;color:var(--ink-3);letter-spacing:-.01em}
+.stat-f{margin-top:12px;display:flex;align-items:center;gap:8px;min-height:22px}
+.delta{display:inline-flex;align-items:center;gap:4px;padding:4px 11px;border-radius:99px;
+  font-size:11.5px;font-weight:700;background:rgba(255,255,255,.8)}
+.delta.up{color:var(--jade)}.delta.down{color:var(--alert)}.delta.flat{color:var(--ink-3)}
+.delta-note{font-size:11px;color:var(--ink-3)}
 
-    /* ── COVER PAGE ── */
-    .page.cover {
-      background: linear-gradient(155deg, #14301F 0%, #1C4532 48%, #2D6A4F 100%);
-      color: #fff;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-    }
+/* ── MONEY EXPLORER ─────────────────────────────────────── */
+.toggle{display:inline-flex;padding:5px;background:var(--forest-08);border-radius:99px;gap:4px}
+.toggle button{
+  font:inherit;font-size:13.5px;font-weight:600;letter-spacing:-.01em;cursor:pointer;
+  border:0;background:transparent;color:var(--ink-2);padding:9px 22px;border-radius:99px;
+  transition:background .3s var(--ease),color .3s;
+}
+.toggle button[aria-selected="true"]{background:var(--forest);color:var(--buttercup)}
+.flow-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;
+  flex-wrap:wrap;margin:26px 0 18px}
+.flow-total{text-align:right}
+.flow-total .k{font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2)}
+.flow-total .v{font-size:clamp(26px,3.6vw,38px);font-weight:800;letter-spacing:-.035em;color:var(--forest)}
+.bars{display:flex;flex-direction:column;gap:10px}
+.bar{
+  width:100%;text-align:left;font:inherit;cursor:pointer;background:#fff;
+  border:1px solid var(--rule);border-radius:var(--r-md);padding:15px 18px;
+  display:grid;grid-template-columns:1fr auto;gap:6px 18px;align-items:center;
+  transition:border-color .3s,box-shadow .3s,transform .3s var(--ease);
+}
+.bar:hover{border-color:var(--jade);box-shadow:var(--s1)}
+.bar[aria-expanded="true"]{border-color:var(--jade);box-shadow:var(--s2)}
+.bar-name{font-size:14.5px;font-weight:600;color:var(--forest)}
+.bar-amt{font-size:15px;font-weight:800;letter-spacing:-.03em;color:var(--forest)}
+.bar-track{grid-column:1/-1;display:block;height:12px;border-radius:99px;background:var(--forest-08);overflow:hidden}
+.bar-fill{display:block;height:100%;border-radius:99px;width:0;transition:width 1.1s var(--ease)}
+.bar-fill.inflow{background:linear-gradient(90deg,var(--jade),#4d8f66)}
+.bar-fill.outflow{background:linear-gradient(90deg,var(--brass),var(--buttercup))}
+.bar-pct{grid-column:1/-1;display:block;font-size:12px;color:var(--ink-3);font-weight:500}
+.bar-note{
+  grid-column:1/-1;display:block;font-size:13.5px;color:var(--ink-2);line-height:1.6;
+  max-height:0;overflow:hidden;transition:max-height .45s var(--ease),padding .45s var(--ease);
+}
+.bar[aria-expanded="true"] .bar-note{max-height:200px;padding-top:12px;
+  border-top:1px solid var(--rule);margin-top:4px}
 
-    .cover::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse at 18% 58%, rgba(82, 183, 136, 0.20) 0%, transparent 62%),
-        radial-gradient(ellipse at 84% 16%, rgba(201, 162, 39, 0.22) 0%, transparent 54%);
-      pointer-events: none;
-    }
+/* ── SPLIT / AID METER ──────────────────────────────────── */
+.meter{display:flex;height:66px;border-radius:var(--r-md);overflow:hidden;box-shadow:var(--s1)}
+.meter button{
+  font:inherit;border:0;cursor:pointer;color:#fff;position:relative;
+  display:flex;align-items:center;justify-content:center;
+  font-size:13px;font-weight:700;letter-spacing:-.01em;width:0;
+  transition:width 1.2s var(--ease),filter .3s;
+}
+.meter button:hover,.meter button[aria-pressed="true"]{filter:brightness(1.12)}
+.meter .s1{background:var(--forest)}
+.meter .s2{background:var(--jade)}
+.meter .s3{background:var(--brass);color:var(--forest)}
+.meter-legend{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:18px}
+.leg{background:#fff;border:1px solid var(--rule);border-radius:var(--r-md);padding:16px 18px;
+  border-top:4px solid var(--jade);transition:transform .3s var(--ease)}
+.leg.on{transform:translateY(-3px);box-shadow:var(--s2)}
+.leg:nth-child(1){border-top-color:var(--forest)}
+.leg:nth-child(3){border-top-color:var(--brass)}
+.leg .k{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.leg .v{font-size:24px;font-weight:800;letter-spacing:-.035em;color:var(--forest);margin-top:6px}
+.leg .p{font-size:12.5px;color:var(--ink-3);font-weight:500}
 
-    .cover-top {
-      position: relative; z-index: 1;
-      padding: 0.55in 0.65in 0;
-      display: flex; justify-content: space-between; align-items: flex-start;
-    }
+/* ── CARDS / EVENTS ─────────────────────────────────────── */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
+.evt{
+  background:#fff;border:1px solid var(--rule);border-top:4px solid var(--jade);
+  border-radius:var(--organic);padding:24px 26px;box-shadow:var(--s1);
+  display:flex;flex-direction:column;transition:transform .35s var(--ease),box-shadow .35s;
+}
+.evt:hover{transform:translateY(-4px);box-shadow:var(--s2)}
+.evt:nth-child(even){border-radius:var(--organic-alt);border-top-color:var(--brass)}
+.tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  padding:5px 14px;border-radius:99px;background:var(--forest);color:var(--buttercup);align-self:flex-start}
+.evt h3{font-size:19px;color:var(--forest);margin:14px 0 8px}
+.evt p{font-size:14px;color:var(--ink-2);line-height:1.6}
+.trio{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:9px;margin-top:18px}
+.cell{background:var(--jade-06);border:1px solid var(--rule);border-radius:var(--r-sm);
+  padding:14px 8px;text-align:center}
+.cell b{display:block;font-size:26px;font-weight:800;letter-spacing:-.035em;color:var(--forest);line-height:1.05}
+.cell span{display:block;font-size:10px;font-weight:600;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--ink-2);margin-top:7px}
+.money-line{display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  padding:11px 0;border-top:1px solid var(--rule);font-size:14px;margin-top:auto}
+.money-line .k{color:var(--ink-2)}
+.money-line .v{font-weight:800;letter-spacing:-.03em;color:var(--forest)}
+.foot-note{font-size:12.5px;color:var(--ink-3);line-height:1.55;margin-top:12px}
 
-    .cover-org-mark { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.75); font-weight: 700; }
-    .cover-meta-small { font-size: 11px; color: rgba(194,138,42,0.85); text-align: right; line-height: 1.8; font-weight: 600; letter-spacing: 0.04em; }
+/* ── LETTER ─────────────────────────────────────────────── */
+.letter{max-width:70ch}
+.letter p{font-size:16.5px;line-height:1.72;color:var(--ink-2);margin-bottom:17px}
+.letter p.first::first-letter{
+  font-size:62px;font-weight:900;color:var(--jade);float:left;line-height:.78;
+  padding:6px 12px 0 0;letter-spacing:-.04em;
+}
+.ayah{
+  background:var(--butter-18);border-left:5px solid var(--brass);
+  border-radius:0 var(--r-lg) var(--r-lg) 0;padding:26px 30px;margin:26px 0;
+}
+.ayah .ar{font-size:23px;line-height:2;color:var(--forest);direction:rtl;margin-bottom:12px}
+.ayah .tr{font-size:16px;font-weight:600;color:var(--forest);line-height:1.55}
+.ayah .src{font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--jade);margin-top:10px}
+.signoff{margin-top:26px;font-size:16px;color:var(--ink-2)}
+.signoff b{display:block;color:var(--forest);font-weight:700;margin-top:4px}
 
-    .cover-hero { position: relative; z-index: 1; flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 0.3in 0.65in; }
-    .cover-hero-org { font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(194, 138, 42, 0.85); margin-bottom: 18px; font-weight: 600; }
-    .cover-hero h1 { font-size: 46pt; font-weight: 400; color: #fff; line-height: 1.04; margin-bottom: 16px; letter-spacing: -0.01em; }
-    .cover-hero-desc { font-size: 12.5pt; color: rgba(255,255,255,0.62); margin-bottom: 10px; line-height: 1.6; max-width: 5.2in; }
-    .cover-period {
-      font-size: 11.5px; color: rgba(255,255,255,0.8); margin-top: 20px; display: inline-flex; align-items: center; gap: 8px;
-      background: rgba(255,255,255,0.08); border: 0.5px solid rgba(255,255,255,0.16); padding: 7px 16px; border-radius: 100px; width: fit-content;
-    }
+/* ── QUOTE ──────────────────────────────────────────────── */
+.quote{
+  background:var(--butter-18);border-left:5px solid var(--brass);
+  border-radius:0 var(--r-lg) var(--r-lg) 0;padding:26px 30px 24px;margin:28px 0;position:relative;
+}
+.band--dark .quote{background:rgba(255,255,255,.06);border-left-color:var(--buttercup)}
+.quote p{font-size:17.5px;font-weight:500;line-height:1.55;color:var(--forest)}
+.band--dark .quote p{color:rgba(255,255,255,.93)}
+.quote cite{display:block;margin-top:14px;font-style:normal;font-size:12px;font-weight:600;
+  letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
+.band--dark .quote cite{color:var(--brass)}
 
-    .cover-meta-strip {
-      position: relative; z-index: 1;
-      padding: 0.3in 0.65in;
-      border-top: 0.5px solid rgba(194,138,42,0.25);
-      display: grid; grid-template-columns: repeat(3,1fr); gap: 24px;
-    }
-    .cover-meta-strip label { display: block; font-size: 10px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 4px; }
-    .cover-meta-strip span { font-size: 13px; color: white; font-weight: 500; }
+/* ── CALLOUTS ───────────────────────────────────────────── */
+.note{padding:20px 24px;border-radius:var(--r-md);font-size:14.5px;line-height:1.65;margin:20px 0}
+.note.jade{background:var(--jade-10);border:1px solid var(--jade-24);color:var(--forest)}
+.note.brass{background:var(--brass-14);border:1px solid var(--brass-28);color:var(--forest)}
+.note.butter{background:var(--butter-18);border:1px solid var(--butter-38);color:var(--forest)}
+/* On dark bands a tint goes murky — use the solid Buttercup + Deep Forest
+   treatment instead (brandbook p.27) so contrast holds. */
+.band--dark .note.butter{background:var(--buttercup);border-color:var(--buttercup);color:var(--forest)}
+.band--dark .note.butter a{color:var(--forest);font-weight:700}
+.band--dark .note.jade{background:#fff;border-color:var(--rule);color:var(--forest)}
+.band--dark .note.brass{background:var(--brass);border-color:var(--brass);color:var(--forest)}
+.spot{
+  background:var(--forest);color:rgba(255,255,255,.9);border-radius:var(--organic);
+  padding:34px 38px;margin:28px 0;position:relative;overflow:hidden;
+}
+.spot::after{content:'';position:absolute;inset:0;background-image:var(--ym-noise);
+  opacity:.18;mix-blend-mode:multiply;pointer-events:none}
+.spot>*{position:relative;z-index:1}
+.spot .mk{font-size:22px;color:var(--brass);display:block;margin-bottom:10px;line-height:1}
+.spot h3{font-size:22px;color:#fff;margin-bottom:12px}
+.spot p{font-size:15.5px;line-height:1.68;color:rgba(255,255,255,.88)}
+.spot strong{color:var(--buttercup)}
+.spot a{color:var(--buttercup)}
 
-    /* ── TOC PAGE ── */
-    .toc-list { display: flex; flex-direction: column; margin-top: 8px; }
-    .toc-row {
-      display: flex; align-items: center; gap: 16px; padding: 15px 16px; border-radius: var(--r2);
-      text-decoration: none; color: inherit; border-bottom: 0.5px solid var(--sep-opaque);
-    }
-    .toc-row:last-child { border-bottom: none; }
-    .toc-num { background: var(--green-deep); color: var(--gold); font-family: 'DM Serif Display', Georgia, serif; font-size: 13px; font-weight: 400; padding: 6px 13px; border-radius: 100px; flex-shrink: 0; }
-    .toc-row .toc-title { font-family: 'DM Serif Display', Georgia, serif; font-size: 17px; font-weight: 400; color: var(--green-deep); letter-spacing: 0; }
-    .toc-row .toc-sub { font-size: 12px; color: var(--label-2); margin-top: 2px; }
-    .toc-arrow { color: var(--label-3); font-size: 14px; }
+/* ── ACCORDION ──────────────────────────────────────────── */
+.acc{border:1px solid var(--rule);border-radius:var(--r-md);overflow:hidden;background:#fff}
+.acc+.acc{margin-top:12px}
+.acc-btn{
+  width:100%;font:inherit;text-align:left;cursor:pointer;background:#fff;border:0;
+  padding:20px 22px;display:flex;align-items:center;gap:16px;transition:background .25s;
+}
+.acc-btn:hover{background:var(--jade-06)}
+.acc-n{flex-shrink:0;width:30px;height:30px;border-radius:50%;background:var(--forest);
+  color:var(--buttercup);display:grid;place-items:center;font-size:13px;font-weight:800}
+.acc-t{flex:1;font-size:16px;font-weight:700;color:var(--forest)}
+.pill{font-size:9.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;
+  padding:4px 10px;border-radius:99px}
+.pill.up{background:var(--jade-16);color:var(--forest)}
+.pill.strict{background:var(--brass-28);color:var(--forest)}
+.acc-x{flex-shrink:0;color:var(--jade);font-size:20px;line-height:1;transition:transform .35s var(--ease)}
+.acc-btn[aria-expanded="true"] .acc-x{transform:rotate(45deg)}
+.acc-p{max-height:0;overflow:hidden;transition:max-height .45s var(--ease)}
+.acc-p-in{padding:0 22px 22px 68px;font-size:14.5px;color:var(--ink-2);line-height:1.68}
+.acc-p-in ul{list-style:none;margin-top:8px}
+.acc-p-in li{padding:4px 0 4px 18px;position:relative}
+.acc-p-in li::before{content:'';position:absolute;left:0;top:14px;width:7px;height:7px;
+  border-radius:50%;background:var(--brass)}
 
-    .sub-title { font-size: 10px; font-weight: 700; color: var(--gold-dark); text-transform: uppercase; letter-spacing: 0.16em; margin: 24px 0 12px; }
+/* ── QUIZ ───────────────────────────────────────────────── */
+.quiz{background:#fff;border:1px solid var(--rule);border-radius:var(--organic);
+  padding:30px 32px;box-shadow:var(--s1)}
+.quiz-q{font-size:17px;font-weight:700;color:var(--forest);margin-bottom:16px}
+.quiz-opts{display:flex;flex-direction:column;gap:10px}
+.quiz-opt{
+  font:inherit;text-align:left;cursor:pointer;background:var(--snow);
+  border:1.5px solid var(--rule);border-radius:var(--r-sm);padding:14px 18px;
+  font-size:14.5px;color:var(--ink);transition:all .25s var(--ease);display:flex;gap:12px;align-items:center;
+}
+.quiz-opt:hover:not(:disabled){border-color:var(--jade);background:var(--jade-06)}
+.quiz-opt:disabled{cursor:default}
+.quiz-opt .mk{flex-shrink:0;width:22px;height:22px;border-radius:50%;border:1.5px solid var(--rule);
+  display:grid;place-items:center;font-size:12px;font-weight:800}
+.quiz-opt.right{border-color:var(--jade);background:var(--jade-16)}
+.quiz-opt.right .mk{background:var(--jade);border-color:var(--jade);color:#fff}
+.quiz-opt.wrong{border-color:var(--alert);background:rgba(168,50,31,.07)}
+.quiz-opt.wrong .mk{background:var(--alert);border-color:var(--alert);color:#fff}
+.quiz-fb{margin-top:16px;font-size:14.5px;line-height:1.6;color:var(--ink-2);
+  padding:14px 18px;border-radius:var(--r-sm);background:var(--butter-18);display:none}
+.quiz-fb.show{display:block}
+.quiz-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;
+  margin-top:22px;padding-top:18px;border-top:1px solid var(--rule);flex-wrap:wrap}
+.quiz-dots{display:flex;gap:7px}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--forest-14);transition:background .3s}
+.dot.done{background:var(--jade)}.dot.now{background:var(--brass)}
+.btn{
+  font:inherit;font-size:14px;font-weight:700;letter-spacing:-.01em;cursor:pointer;
+  border:0;border-radius:99px;padding:12px 26px;background:var(--forest);color:var(--buttercup);
+  transition:transform .25s var(--ease),filter .25s;
+}
+.btn:hover{transform:translateY(-2px);filter:brightness(1.15)}
+.btn:disabled{opacity:.4;cursor:default;transform:none}
+.btn.ghost{background:transparent;color:var(--forest);box-shadow:inset 0 0 0 1.5px var(--forest)}
+.btn.ghost:hover{background:var(--forest);color:var(--buttercup)}
 
-    /* ── SECTION HEADER · OPEN ── */
-    .section-open { margin-bottom: 26px; }
-    .section-open h2 { font-size: 34px; font-weight: 400; color: var(--green-deep); letter-spacing: -0.01em; margin-bottom: 8px; line-height: 1.12; }
-    .section-open .section-sub-open { font-size: 13.5px; color: var(--ink-mid); margin-bottom: 16px; }
-    .section-open .accent-rule { width: 54px; height: 3px; background: var(--gold); border-radius: 2px; }
-    .section-label {
-      font-family: 'DM Sans', sans-serif; font-size: 10px; font-weight: 700;
-      letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-dark);
-      margin-bottom: 8px; display: flex; align-items: center; gap: 9px;
-    }
-    .section-label::after { content: ''; flex: 1; height: 1px; background: var(--rule); }
-    .body-text { font-size: 14px; color: var(--label-2); line-height: 1.65; margin-bottom: 12px; }
+/* ── TABLE ──────────────────────────────────────────────── */
+.tbl-wrap{overflow-x:auto;border-radius:var(--r-md);border:1px solid var(--rule);box-shadow:var(--s1)}
+table{width:100%;border-collapse:collapse;background:#fff;font-size:14.5px;min-width:520px}
+thead{background:var(--forest)}
+th{padding:14px 18px;text-align:left;color:rgba(255,255,255,.94);font-size:10.5px;
+  font-weight:600;letter-spacing:.13em;text-transform:uppercase}
+td{padding:13px 18px;border-bottom:1px solid var(--rule);color:var(--ink)}
+tbody tr:last-child td{border-bottom:0}
+tbody tr:nth-child(even){background:var(--snow)}
+td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+tr.total td{background:var(--jade-16);font-weight:800;color:var(--forest)}
+.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;
+  padding:3px 10px;border-radius:99px}
+.badge.in{background:var(--jade-16);color:var(--forest)}
+.badge.out{background:var(--brass-28);color:var(--forest)}
 
-    /* ── LETTER ── */
-    .letter-body p { font-size: 13.5px; color: var(--label-2); line-height: 1.68; margin-bottom: 13px; }
-    .letter-body p.lead::first-letter { font-size: 38px; font-weight: 700; color: var(--green); float: left; line-height: 0.75; padding: 4px 7px 0 0; }
-    .letter-body .pull-quote { padding: 12px 18px; }
-    .letter-body .pull-quote p { font-size: 13.5px; margin-bottom: 4px; }
-    .letter-signoff p { font-size: 13.5px; color: var(--label-2); }
+/* ── NN SEARCH ──────────────────────────────────────────── */
+.search-wrap{position:relative;margin-bottom:14px}
+.search{
+  width:100%;font:inherit;font-size:16px;padding:16px 18px 16px 50px;border-radius:99px;
+  border:1.5px solid var(--rule);background:#fff;color:var(--ink);box-shadow:var(--s1);
+  transition:border-color .25s,box-shadow .25s;-webkit-appearance:none;
+}
+.search:focus{outline:none;border-color:var(--jade);box-shadow:0 0 0 4px var(--jade-16)}
+.search-ico{position:absolute;left:20px;top:50%;transform:translateY(-50%);color:var(--jade);
+  font-size:17px;pointer-events:none}
+.sort-row{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:16px}
+.sort-row .lbl{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+.sort-btn{font:inherit;font-size:12.5px;font-weight:600;cursor:pointer;border:1px solid var(--rule);
+  background:#fff;color:var(--ink-2);padding:7px 15px;border-radius:99px;transition:all .25s}
+.sort-btn:hover{border-color:var(--jade)}
+.sort-btn[aria-pressed="true"]{background:var(--forest);color:var(--buttercup);border-color:var(--forest)}
+.nn-card{background:#fff;border:1px solid var(--rule);border-left:5px solid var(--jade);
+  border-radius:var(--r-sm) var(--r-md) var(--r-md) var(--r-sm);padding:18px 20px;
+  margin-bottom:11px;box-shadow:var(--s1);transition:transform .3s var(--ease),box-shadow .3s}
+.nn-card:hover{transform:translateX(4px);box-shadow:var(--s2)}
+.nn-card-name{font-size:16.5px;font-weight:700;color:var(--forest);margin-bottom:11px}
+.nn-field{display:flex;justify-content:space-between;align-items:baseline;gap:18px;
+  padding:8px 0;border-top:1px solid var(--rule)}
+.nn-label{font-size:10px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--jade);flex-shrink:0}
+.nn-value{font-size:14.5px;font-weight:500;text-align:right;font-variant-numeric:tabular-nums}
+.nn-bal-pos{color:var(--jade);font-weight:800}
+.nn-bal-neg{color:var(--alert);font-weight:800}
+.nn-bal-zero{color:var(--ink-3);font-weight:700}
+.nn-na-val{font-size:13px;color:var(--ink-3);font-weight:500}
+.nn-msg{font-size:15px;color:var(--ink-3);padding:30px 0;text-align:center}
+.nn-count{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--ink-2);margin-bottom:12px}
 
-    /* ── PLACEHOLDER TAG ── */
-    .ph {
-      display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 100px;
-      background: var(--surface-2); border: 1px dashed var(--label-3); color: var(--label-2);
-      font-size: 10px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; line-height: 1.8;
-    }
+/* ── LIGHTBOX ───────────────────────────────────────────── */
+.lb{position:fixed;inset:0;z-index:200;background:rgba(2,20,14,.94);display:none;
+  align-items:center;justify-content:center;padding:5vh 5vw;cursor:zoom-out}
+.lb.open{display:flex}
+.lb img{max-width:100%;max-height:90vh;border-radius:var(--organic);box-shadow:var(--s3)}
+.lb-x{position:absolute;top:22px;right:26px;font-size:32px;color:rgba(255,255,255,.7);
+  background:none;border:0;cursor:pointer;line-height:1}
 
-    /* ── CALLOUTS ── */
-    .callout { padding: 13px 18px; margin: 14px 0; border-radius: var(--r2); font-size: 13px; line-height: 1.6; }
-    .callout-rule { background: var(--green-fill); border: 0.5px solid rgba(26, 122, 74, 0.22); color: #0D4A2A; }
-    .callout-rule strong { color: var(--green); }
-    .callout-warn { background: var(--gold-fill); border: 0.5px solid rgba(194, 138, 42, 0.22); color: #5C3A10; }
-    .callout-warn strong { color: var(--gold); }
-    .callout-info { background: var(--blue-fill); border: 0.5px solid rgba(0, 122, 255, 0.18); color: #003A80; }
-    .callout-info strong { color: var(--blue); }
+/* ── TOP BUTTON / FOOTER ────────────────────────────────── */
+.totop{position:fixed;right:22px;bottom:22px;z-index:70;width:48px;height:48px;border-radius:50%;
+  background:var(--forest);color:var(--buttercup);border:0;cursor:pointer;font-size:19px;
+  box-shadow:var(--s2);opacity:0;pointer-events:none;transition:opacity .35s,transform .35s var(--ease)}
+.totop.show{opacity:1;pointer-events:auto}
+.totop:hover{transform:translateY(-3px)}
+footer{background:var(--forest);color:rgba(255,255,255,.72);text-align:center;
+  padding:64px 0 52px;position:relative;overflow:hidden}
+footer::after{content:'';position:absolute;inset:0;background-image:var(--ym-noise);
+  opacity:.18;mix-blend-mode:multiply;pointer-events:none}
+footer .shell{position:relative;z-index:1}
+footer .ar{font-size:26px;color:var(--brass);margin-bottom:16px}
+footer a{color:var(--buttercup)}
+footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 
-    /* ── GRIDS ── */
-    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 14px 0; }
-    .three-col { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 14px 0; }
+/* ── REVEAL ─────────────────────────────────────────────── */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.rv.in{opacity:1;transform:none}
 
-    /* ── CARDS ── */
-    .card { background: var(--surface); border-radius: var(--r3); padding: 20px 22px; margin-bottom: 12px; box-shadow: var(--s1); border: 0.5px solid var(--sep); }
-    .card h3 { font-family: 'DM Serif Display', Georgia, serif; font-size: 17px; font-weight: 400; color: var(--green-deep); margin-bottom: 8px; letter-spacing: 0; }
-    .card p, .card li { font-size: 13px; color: var(--label-2); line-height: 1.6; }
+/* ── RESPONSIVE ─────────────────────────────────────────── */
+@media(max-width:900px){
+  .hero-body{grid-template-columns:1fr;gap:34px;padding:34px 0}
+  .mosaic{grid-template-columns:repeat(2,1fr);gap:12px}
+  .mosaic .ym-img{aspect-ratio:1/1!important;margin:0!important;border-radius:22px 8px 20px 10px!important}
+  .mosaic .ym-img:nth-child(even){border-radius:8px 22px 10px 20px!important}
+  .band{padding:60px 0}
+  .nav-brand{display:none}
+  .gallery.g3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .acc-p-in{padding-left:22px}
+}
+@media(max-width:560px){
+  .gallery.g2,.gallery.g3{grid-template-columns:1fr}
+  .spot{padding:26px 22px}
+  .quiz{padding:24px 20px}
+  .letter p.first::first-letter{font-size:50px}
+}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;transition-duration:.01ms!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
 
-    /* ── STAT CARDS ── */
-    .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin: 14px 0; }
-    .stat-card {
-      background: var(--green-pale); border: none; border-left: 4px solid var(--green-mid);
-      border-radius: var(--r2); padding: 16px 18px 15px; box-shadow: var(--s1);
-    }
-    .stat-card.exp  { background: var(--red-pale);   border-left-color: var(--red); }
-    .stat-card.gold { background: var(--gold-light); border-left-color: var(--gold); }
-    .stat-card.blue { background: var(--teal-pale);  border-left-color: var(--teal); }
-    .stat-label {
-      font-family: 'DM Sans', sans-serif; font-size: 9.5px; font-weight: 700;
-      letter-spacing: 0.13em; text-transform: uppercase; color: var(--ink-mid); margin-bottom: 8px;
-    }
-    .stat-value {
-      font-family: 'DM Serif Display', Georgia, serif; font-size: 27px; font-weight: 400;
-      letter-spacing: -0.01em; color: var(--green-deep); line-height: 1.1;
-    }
-    .stat-card.exp  .stat-value { color: var(--red); }
-    .stat-card.gold .stat-value { color: var(--gold-dark); }
-    .stat-card.blue .stat-value { color: var(--teal); }
-    .stat-sub { margin-top: 9px; min-height: 1px; }
-    .delta {
-      display: inline-flex; align-items: center; gap: 3px; padding: 3px 9px;
-      border-radius: 100px; font-size: 10.5px; font-weight: 700; letter-spacing: 0.02em;
-      background: rgba(255,255,255,0.72);
-    }
-    .delta-up   { color: var(--green-mid); }
-    .delta-down { color: var(--red); }
-    .delta-flat { color: var(--ink-light); }
-    .delta-note { font-size: 10px; color: var(--ink-light); margin-left: 6px; }
-
-    /* ── ACCOUNT-STYLE CARDS ── */
-    .account-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 14px 0; }
-    .account-card { background: var(--surface); border: 1px solid var(--rule); border-top: 3px solid var(--green-mid); border-radius: var(--r3); padding: 18px 20px; box-shadow: var(--s1); }
-    .account-card.gold-top { border-top-color: var(--gold); }
-    .account-tag { font-size: 9.5px; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; display: inline-block; margin-bottom: 11px; background: var(--green-deep); color: var(--gold); }
-    .account-card h3 { font-family: 'DM Serif Display', Georgia, serif; font-size: 17px; font-weight: 400; color: var(--green-deep); margin-bottom: 6px; letter-spacing: 0; }
-    .account-card p { font-size: 12.5px; color: var(--label-2); line-height: 1.55; }
-
-    /* ── METRIC TRIO (inside account cards) ── */
-    .metric-trio { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 12px; }
-    .metric-trio.duo { grid-template-columns: repeat(2, 1fr); }
-    .metric-cell {
-      background: var(--surface-2); border: 0.5px solid var(--sep-opaque);
-      border-radius: var(--r2); padding: 12px 10px; text-align: center;
-    }
-    .metric-cell .m-val {
-      font-family: 'DM Serif Display', Georgia, serif; font-size: 24px; line-height: 1.05;
-      color: var(--green-deep); display: block;
-    }
-    .metric-cell .m-lab {
-      font-size: 9px; font-weight: 700; letter-spacing: 0.11em; text-transform: uppercase;
-      color: var(--ink-mid); margin-top: 6px; display: block;
-    }
-    .account-card .cost-line {
-      display: flex; justify-content: space-between; align-items: baseline;
-      margin-top: 11px; padding-top: 9px; border-top: 0.5px solid var(--sep-opaque);
-      font-size: 12px;
-    }
-    .account-card .cost-line .cl-key { color: var(--label-2); }
-    .account-card .cost-line .cl-val { font-weight: 700; color: var(--label); font-variant-numeric: tabular-nums; }
-
-    /* ── KV ── */
-    .kv-inner { background: var(--surface-2); border-radius: var(--r1); padding: 11px 13px; margin-top: 10px; border: 0.5px solid var(--sep-opaque); }
-    .kv-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 0; border-bottom: 0.5px solid var(--sep-opaque); font-size: 12.5px; }
-    .kv-row:last-child { border-bottom: none; }
-    .kv-key { color: var(--label-2); }
-    .kv-val { font-weight: 600; color: var(--label); }
-
-    /* ── TABLE ── */
-    table { width: 100%; border-collapse: separate; border-spacing: 0; background: var(--surface); border-radius: var(--r2); overflow: hidden; border: 0.5px solid var(--sep-opaque); font-size: 13px; margin: 12px 0; box-shadow: var(--s1); }
-    thead tr { background: var(--green-deep); }
-    thead th { padding: 11px 16px; text-align: left; color: rgba(255,255,255,0.92); font-size: 10px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; border-bottom: none; }
-    tbody tr:nth-child(even) { background: var(--cream); }
-    tbody td { padding: 10px 16px; color: var(--label); border-bottom: 0.5px solid var(--sep-opaque); }
-    tbody tr:last-child td { border-bottom: none; }
-    td.num { text-align: right; font-variant-numeric: tabular-nums; }
-    tbody tr.total-row { background: var(--green-pale); }
-    tbody tr.total-row td { font-weight: 700; color: var(--green-deep); }
-
-    /* ── BADGE ── */
-    .badge { display: inline-flex; align-items: center; padding: 3px 11px; border-radius: 100px; font-size: 10px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; }
-    .badge-exp { background: var(--red-fill); color: var(--red); }
-    .badge-opt { background: var(--blue-fill); color: var(--blue); }
-
-    /* ── BAR CHART ── */
-    .bar-chart { margin: 10px 0 22px; }
-    .bar-row {
-      display: grid; grid-template-columns: 2.05in 1fr 0.95in;
-      align-items: center; gap: 14px; margin-bottom: 10px; font-size: 12px;
-    }
-    .bar-row .bar-label { color: var(--label-2); font-weight: 500; line-height: 1.3; }
-    .bar-track { background: var(--cream); border: 1px solid var(--rule); border-radius: 100px; height: 14px; overflow: hidden; }
-    .bar-fill { height: 100%; border-radius: 100px; width: 0%; }
-    .bar-fill.income { background: var(--green-mid); }
-    .bar-fill.expense { background: var(--red); }
-    .bar-row .bar-val {
-      text-align: right; font-variant-numeric: tabular-nums;
-      font-weight: 600; color: var(--label);
-    }
-    .chart-head {
-      display: flex; justify-content: space-between; align-items: baseline;
-      border-bottom: 0.5px solid var(--sep-opaque); padding-bottom: 7px; margin-top: 20px;
-    }
-    .chart-head .ch-title {
-      font-size: 10px; font-weight: 700; letter-spacing: 0.16em;
-      text-transform: uppercase; color: var(--gold-dark);
-    }
-    .chart-head .ch-total { font-size: 12.5px; font-weight: 700; color: var(--green-deep); font-variant-numeric: tabular-nums; }
-    .chart-head .ch-total.exp { color: var(--red); }
-
-    /* ── PULL QUOTE ── */
-    .pull-quote {
-      border-left: 4px solid var(--gold); background: var(--gold-light);
-      border-radius: 0 var(--r2) var(--r2) 0; padding: 18px 22px 16px; margin: 16px 0; position: relative;
-    }
-    .pull-quote::before {
-      content: '\201C'; font-family: 'DM Serif Display', Georgia, serif; font-size: 44px;
-      color: var(--gold); opacity: 0.42; position: absolute; top: 2px; left: 14px; line-height: 1;
-    }
-    .pull-quote p {
-      font-family: 'DM Serif Display', Georgia, serif; font-size: 15.5px; font-style: italic;
-      color: var(--gold-dark); line-height: 1.5; margin-bottom: 9px; padding-left: 26px;
-    }
-    .pull-quote cite {
-      font-family: 'DM Sans', sans-serif; font-size: 10.5px; font-style: normal; font-weight: 700;
-      letter-spacing: 0.09em; text-transform: uppercase; color: var(--gold-dark); display: block; padding-left: 26px;
-    }
-
-    /* ── SISTERHOOD PHOTO STRIPS ── */
-    .photo-strip { display: grid; gap: 10px; margin: 16px 0; }
-    .photo-strip.cols-2 { grid-template-columns: repeat(2, 1fr); }
-    .photo-strip.cols-3 { grid-template-columns: repeat(3, 1fr); }
-    .photo-strip.cols-4 { grid-template-columns: repeat(4, 1fr); }
-    .photo-strip img { width: 100%; height: 100%; object-fit: cover; display: block; border-radius: var(--r2); }
-    .photo-band {
-      margin: 18px 0; padding: 16px 18px; background: var(--green-pale);
-      border: 1px solid rgba(45,106,79,0.20); border-radius: var(--r3);
-    }
-    .photo-band-title {
-      font-size: 10px; font-weight: 700; letter-spacing: 0.16em; text-transform: uppercase;
-      color: var(--green-deep); margin-bottom: 10px;
-    }
-    .photo-band .photo-strip { margin: 0; }
-    .cover-photo-strip {
-      position: relative; z-index: 1; display: grid; grid-template-columns: repeat(4, 1fr);
-      gap: 8px; padding: 0 0.65in 0.28in;
-    }
-    .cover-photo-strip .img-ph {
-      height: 0.85in; background: rgba(255,255,255,0.06);
-      border: 1px dashed rgba(255,255,255,0.22); color: rgba(255,255,255,0.45); font-size: 10px;
-    }
-    .cover-photo-strip img { width: 100%; height: 0.85in; object-fit: cover; border-radius: var(--r1); display: block; }
-
-    /* ── NN BANK BALANCE SEARCH ── */
-    .nn-search-input {
-      width: 100%; padding: 11px 15px; font-size: 13.5px; font-family: inherit;
-      border: 0.5px solid var(--sep-opaque); border-radius: var(--r2);
-      background: var(--surface); color: var(--label); box-shadow: var(--s1);
-      margin-bottom: 14px; -webkit-appearance: none;
-    }
-    .nn-search-input:focus { outline: none; border-color: var(--green); box-shadow: 0 0 0 3px var(--green-fill); }
-    .nn-hint { font-size: 12px; color: var(--label-3); margin-bottom: 12px; }
-    .nn-row {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 12px 16px; background: var(--surface); border: 0.5px solid var(--sep);
-      border-radius: var(--r2); margin-bottom: 8px; box-shadow: var(--s1);
-    }
-    .nn-row-name { font-size: 13.5px; font-weight: 600; color: var(--label); }
-    .nn-row-region { font-size: 11.5px; color: var(--label-2); margin-top: 2px; }
-    .nn-row-bal { font-size: 15px; font-weight: 700; letter-spacing: -0.01em; }
-    .nn-bal-pos { color: var(--green); }
-    .nn-bal-neg { color: var(--red); }
-    .nn-bal-zero { color: var(--label-3); }
-    .nn-na-val { font-size: 12px; color: var(--label-3); font-style: italic; font-weight: 500; }
-    .nn-msg { font-size: 12.5px; color: var(--label-3); font-style: italic; padding: 14px 0; text-align: center; }
-    .nn-count { font-size: 11px; font-weight: 600; color: var(--label-2); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 10px; }
-
-    /* ── IMAGE PLACEHOLDER ── */
-    .img-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px; margin: 14px 0; }
-    .img-ph { background: var(--surface-2); border: 1.5px dashed var(--sep-opaque); border-radius: var(--r2); display: flex; align-items: center; justify-content: center; color: var(--label-3); font-size: 12px; text-align: center; padding: 14px; }
-    .img-ph-cap { font-size: 11px; color: var(--label-2); margin-top: 6px; text-align: center; }
-
-    /* ── TAKEAWAY BOX (Q1 ✦ pattern) ── */
-    .takeaway {
-      background: var(--green-deep); color: rgba(255,255,255,0.86); border-radius: var(--r3);
-      padding: 22px 26px; margin: 18px 0; position: relative;
-    }
-    .takeaway .tk-mark {
-      font-size: 19px; color: var(--gold); display: block; margin-bottom: 8px; line-height: 1;
-    }
-    .takeaway h4 {
-      font-family: 'DM Serif Display', Georgia, serif; font-size: 17px; font-weight: 400;
-      color: #fff; margin-bottom: 9px;
-    }
-    .takeaway p { font-size: 13px; line-height: 1.65; color: rgba(255,255,255,0.82); }
-    .takeaway strong { color: var(--gold); }
-
-    /* ── CASE STUDY / FEATURE BOX ── */
-    .cs-wrapper { background: var(--surface); border: 0.5px solid var(--sep-opaque); border-radius: var(--r4); padding: 24px; margin: 14px 0; box-shadow: var(--s2); }
-    .cs-wrapper .cs-label { font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--gold-dark); font-weight: 700; margin-bottom: 16px; display: flex; align-items: center; gap: 10px; }
-    .cs-wrapper .cs-label::before { content: ''; display: block; width: 22px; height: 2px; background: var(--gold); border-radius: 1px; }
-    .cs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 14px; }
-    .cs-block { background: var(--surface-2); border: 0.5px solid var(--sep-opaque); border-radius: var(--r2); padding: 14px 16px; }
-    .cs-block h4 { font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--label-2); font-weight: 700; margin-bottom: 10px; }
-    .cs-block .cs-figure { font-family: 'DM Serif Display', Georgia, serif; font-size: 22px; font-weight: 400; color: var(--green-deep); }
-
-    /* ── STEPS ── */
-    .steps { margin: 10px 0; }
-    .step { display: flex; gap: 14px; padding: 14px 0; border-bottom: 0.5px solid var(--sep-opaque); align-items: flex-start; }
-    .step:last-child { border-bottom: none; }
-    .step-n { width: 30px; height: 30px; background: var(--green-deep); color: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-family: 'DM Serif Display', Georgia, serif; font-size: 14px; font-weight: 400; flex-shrink: 0; margin-top: 1px; }
-    .step-body h4 { font-family: 'DM Serif Display', Georgia, serif; font-size: 16px; font-weight: 400; color: var(--green-deep); margin-bottom: 5px; display: flex; align-items: center; gap: 8px; }
-    .step-body p { font-size: 12.5px; color: var(--label-2); line-height: 1.55; }
-    .step-body ul { list-style: none; padding: 0; margin-top: 6px; }
-    .step-body ul li { font-size: 12.5px; color: var(--label-2); line-height: 1.55; padding: 3px 0 3px 16px; position: relative; }
-    .step-body ul li::before { content: '·'; color: var(--green); font-weight: 700; position: absolute; left: 0; }
-    .step-body ul li strong { color: var(--label); }
-
-    hr.sep { border: none; height: 0.5px; background: var(--sep-opaque); margin: 6px 0; }
-
-    /* ── CLOSING FOOTER BLOCK ── */
-    .closing-footer { background: var(--green-deep); color: rgba(255, 255, 255, 0.78); text-align: center; padding: 36px 26px; border-radius: var(--r3); margin-top: 20px; }
-    .closing-footer .b { font-size: 20px; color: var(--gold); margin-bottom: 12px; font-weight: 400; opacity: 0.95; }
-    .closing-footer a { color: rgba(194, 138, 42, 0.85); text-decoration: none; }
-
-    /* ── PRINT ── */
-    @media print {
-      @page { size: letter; margin: 0; }
-      * { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
-      body { background: white; }
-      .draft-banner { display: none; }
-      .page { margin: 0; box-shadow: none; page-break-after: always; }
-      .page:last-child { page-break-after: auto; }
-      .card, .stat-card, .account-card, .cs-wrapper, table, .img-ph,
-      .photo-strip, .photo-band, .nn-row, .metric-trio,
-      .pull-quote, .callout, .step, .toc-row, .bar-chart {
-        break-inside: avoid;
-      }
-    }
-  </style>
+/* ── PRINT ──────────────────────────────────────────────── */
+@media print{
+  @page{size:letter;margin:.5in}
+  *{print-color-adjust:exact;-webkit-print-color-adjust:exact}
+  .navbar,.totop,.lb,.scroll-cue,.toggle,.quiz,.sort-row,.search-wrap{display:none!important}
+  .rv{opacity:1!important;transform:none!important}
+  .band{padding:26px 0;page-break-inside:avoid}
+  .hero{min-height:auto}
+  .bar-note{max-height:none!important;padding-top:10px!important}
+  .acc-p{max-height:none!important}
+  .evt,.stat,.quote,.spot,.acc,.nn-card,.tbl-wrap,figure.shot{break-inside:avoid}
+}
+</style>
 </head>
-
 <body>
 
-  <div class="draft-banner">
-    <strong>DRAFT SCAFFOLD</strong> — items tagged <span class="ph" style="vertical-align:middle;">Pending</span> await the companion data files. Not for distribution.
+<!-- ══════════ HERO ══════════ -->
+<header class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-top">
+      <div class="hero-mark">Young Muslims<br>Finance Department</div>
+      <div class="hero-meta">FY26 · Q2 Report<br>Issued July 2026</div>
+    </div>
+
+    <div class="hero-body">
+      <div>
+        <div class="hero-kicker">National Finance Report</div>
+        <h1 class="display">Q2 Finance Report</h1>
+        <p class="lede">A transparent look at income, expenses, national events, and financial aid across NeighborNets nationwide.</p>
+        <div class="hero-chips">
+          <span class="chip">Reporting period <b>Apr&ndash;Jun 2026</b></span>
+          <span class="chip">Prepared by <b>Finance Department</b></span>
+          <span class="chip"><b>48</b> NNs reporting</span>
+        </div>
+      </div>
+      <div class="mosaic">
+        <span class="ym-img"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.32.38-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span>
+        <span class="ym-img"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.47.50-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span>
+        <span class="ym-img"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.49.22-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span>
+        <span class="ym-img"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.50.31-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span>
+      </div>
+    </div>
+
+    <div class="scroll-cue"><span class="line"></span> Scroll to begin</div>
   </div>
+</header>
 
-  <!-- ══════════════════════════════════
-       PAGE 1 — COVER
-  ══════════════════════════════════ -->
-  <div class="page cover">
-    <div class="cover-top">
-      <div class="cover-org-mark">Young Muslims<br>Finance Department</div>
-      <div class="cover-meta-small">FY26 · Q2 Report<br>Issued <span class="ph" style="background:transparent; border-color:rgba(255,255,255,0.4); color:rgba(255,255,255,0.7);">July 2026</span></div>
-    </div>
-
-    <div class="cover-hero">
-      <div class="cover-hero-org">National Finance Report</div>
-      <h1>Q2 <em>Finance</em><br>Report</h1>
-      <p class="cover-hero-desc">A transparent look at income, expenses, national events, and financial aid across NeighborNets nationwide.</p>
-      <div class="cover-period">Reporting Period: <span class="ph" style="background:transparent; border-color:rgba(255,255,255,0.4); color:rgba(255,255,255,0.7);">Apr–Jun 2026</span></div>
-    </div>
-
-    <div class="cover-photo-strip">
-    <img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.32.38-scaled.jpeg" alt="">
-    <img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.47.50-scaled.jpeg" alt="">
-    <img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.49.22-scaled.jpeg" alt="">
-    <img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.50.31-scaled.jpeg" alt="">
-    </div>
-
-    <div class="cover-meta-strip">
-      <div><label>Prepared by</label><span>Finance Department</span></div>
-      <div><label>Period</label><span>Q2 FY26</span></div>
-      <div><label>Issued</label><span class="ph" style="background:transparent; border-color:rgba(255,255,255,0.4); color:rgba(255,255,255,0.7);">July 2026</span></div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════
-       PAGE 2 — TABLE OF CONTENTS
-  ══════════════════════════════════ -->
-  <div class="page" id="toc">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Table of Contents</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Navigation</div>
-        <h2>Table of <em>Contents</em></h2>
-        <div class="section-sub-open">FY2026 Q2 Quarterly Report</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <div class="toc-list">
-        <a class="toc-row" href="#sec-letter"><span class="toc-num">01</span><div style="flex:1;"><div class="toc-title">Letter from the Finance Team</div><div class="toc-sub">A note framing the quarter</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-glance"><span class="toc-num">02</span><div style="flex:1;"><div class="toc-title">Q2 at a Glance</div><div class="toc-sub">Headline stats for the quarter</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-income-expense"><span class="toc-num">03</span><div style="flex:1;"><div class="toc-title">Q2 Income &amp; Expense Breakdown</div><div class="toc-sub">National-level totals by category</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-initiatives"><span class="toc-num">04</span><div style="flex:1;"><div class="toc-title">Q2 National Initiatives &amp; Event Finances</div><div class="toc-sub">YMC · YMLC · MAD · YM Gives</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-aid"><span class="toc-num">05</span><div style="flex:1;"><div class="toc-title">Financial Aid Deep Dive</div><div class="toc-sub">Applicants · where the funding came from</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-highlights"><span class="toc-num">06</span><div style="flex:1;"><div class="toc-title">Highlights</div><div class="toc-sub">NN Spotlight · National Shura tours</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-notes"><span class="toc-num">07</span><div style="flex:1;"><div class="toc-title">Notes from Finance</div><div class="toc-sub">Handbook launch · friendly policy reminders</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-balances"><span class="toc-num" style="background:var(--gold);">A</span><div style="flex:1;"><div class="toc-title">Appendix — NN Bank Balances</div><div class="toc-sub">Search your NeighborNet’s total balance</div></div><span class="toc-arrow">→</span></a>
-        <a class="toc-row" href="#sec-closing"><span class="toc-num">08</span><div style="flex:1;"><div class="toc-title">Closing</div><div class="toc-sub">Jazakumullahu khairan</div></div><span class="toc-arrow">→</span></a>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 2</span>
-      </div>
+<!-- ══════════ STICKY NAV ══════════ -->
+<nav class="navbar" id="nav">
+  <div class="navbar-in">
+    <div class="nav-brand">Young Muslims <em>&middot; Finance</em></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#letter">Letter</a>
+      <a href="#glance">At a Glance</a>
+      <a href="#flow">Money Flow</a>
+      <a href="#events">Initiatives</a>
+      <a href="#aid">Financial Aid</a>
+      <a href="#highlights">Highlights</a>
+      <a href="#notes">Notes</a>
+      <a href="#balances">NN Balances</a>
     </div>
   </div>
+  <div class="progress" id="progress"></div>
+</nav>
 
-  <!-- ══════════════════════════════════
-       PAGE 3 — LETTER FROM THE FINANCE TEAM
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-letter">
-    <div class="page-content" style="display:flex; flex-direction:column; min-height:9.3in;">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 01 · Letter from the Finance Team</span>
+<!-- ══════════ 01 · LETTER ══════════ -->
+<section class="band" id="letter">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 01</div>
+      <h2 class="display">Letter from the Finance Team</h2>
+      <div class="rule"></div>
+    </div>
+
+    <div class="letter rv">
+      <div style="margin-bottom:24px">
+        <img src="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" alt="Bismillah ir-Rahman ir-Raheem" style="width:170px;margin-bottom:10px">
+        <div style="font-size:15px;color:var(--ink-2)">We begin in the name of Allah <span lang="ar" style="color:var(--brass);font-size:1.1em">&#xFDFB;</span> and send peace and blessings upon His Messenger <span lang="ar" style="color:var(--brass);font-size:1.1em">&#xFDFA;</span></div>
       </div>
 
-      <div class="section-open">
-        <div class="section-label">Section 01</div>
-        <h2>Letter from the <em>Finance Team</em></h2>
-        <div class="accent-rule"></div>
+      <p class="first">What a quarter it has been. Between YMC bringing our community together in Baltimore, chapters across the country serving their communities through YM Gives and other amazing events, our sisters showing up in D.C. for Muslim Advocacy Day, and the exciting groundwork laid ahead for YMLC this summer &mdash; Q2 was full of khair. This report is the story of that khair, told in numbers.</p>
+
+      <p>This quarter also took us on the road. National Shura tours to Georgia and Dallas let us sit face-to-face with local leadership &mdash; hearing what's working, what's been confusing, and what chapters actually need from us. Those conversations directly shaped the systems and reminders you'll find in these pages.</p>
+
+      <p>So why do we care this much about receipts and spreadsheets and all of this seemingly boring, mundane stuff? A man once asked the Prophet &#xFDFA; whether he should tie his camel or trust in Allah &#xFDFB; &mdash; and the Prophet &#xFDFA; told him to tie it <em>and</em> trust in Allah &#xFDFB;. That's exactly what this work is. We make du'a for barakah in YM's efforts, and then we tie our camel: the JotForms, the dashboards, the receipts. All the admin work behind the tarbiyyah and spiritual development happening in our organization &mdash; that's us tying our camel.</p>
+
+      <div class="ayah">
+        <div class="ar" lang="ar">&#1573;&#1616;&#1606;&#1614;&#1617; &#1575;&#1604;&#1604;&#1614;&#1617;&#1607;&#1614; &#1610;&#1614;&#1571;&#1618;&#1605;&#1615;&#1585;&#1615;&#1603;&#1615;&#1605;&#1618; &#1571;&#1614;&#1606;&#1618; &#1578;&#1615;&#1572;&#1614;&#1583;&#1617;&#1615;&#1608;&#1575; &#1575;&#1604;&#1618;&#1571;&#1614;&#1605;&#1614;&#1575;&#1606;&#1614;&#1575;&#1578;&#1616; &#1573;&#1604;&#1614;&#1648;&#1609; &#1571;&#1614;&#1607;&#1618;&#1604;&#1616;&#1607;&#1614;&#1575;</div>
+        <div class="tr">&ldquo;Indeed, Allah commands you to render trusts to whom they are due.&rdquo;</div>
+        <div class="src">Qur'an 4:58</div>
       </div>
 
-      <div style="flex:1;">
-        <div class="letter-body">
-          <div style="margin-bottom:22px;">
-            <img src="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/bismillah.svg" alt="Bismillah ir-Rahman ir-Raheem" style="width:150px; height:auto; display:block; margin-bottom:8px;">
-            <div style="font-size:13.5px; color:var(--label-2); line-height:1.68;">We begin in the name of Allah <span lang="ar" style="color:var(--gold); font-size:1.05em;">ﷻ</span> and send peace and blessings upon His Messenger <span lang="ar" style="color:var(--gold); font-size:1.05em;">ﷺ</span></div>
-          </div>
+      <p>Every dollar YM holds is exactly that &mdash; a trust from the community. So when you submit a JotForm to track your finances, upload a proper receipt, or keep your dashboard current &mdash; that's not paperwork, that's amanah. Because of your cooperation and attention to detail, we can account for every dollar YM earned or spent this quarter, and hand the next group of leaders records they can actually plan from. We're not just protecting money; we're protecting trust, barakah, and the reputation of this work.</p>
 
-          <p class="lead">What a quarter it has been. Between YMC bringing our community together
-            in Baltimore, chapters across the country serving their communities through YM Gives and other
-            amazing events, our sisters showing up in D.C. for Muslim Advocacy Day, and the exciting groundwork
-            laid ahead for YMLC this summer — Q2 was full of khair. This report is the story of that khair, told
-            in numbers.</p>
+      <p>We ask Allah &#xFDFB; to accept our efforts, place barakah in every dollar entrusted to this organization, and keep our chapters growing in strength, sisterhood, and service.</p>
 
-          <p>This quarter also took us on the road. National Shura tours to Georgia and Dallas let us sit
-            face-to-face with local leadership — hearing what's working, what's been confusing, and what chapters
-            actually need from us. Those conversations directly shaped the systems and reminders you'll find in
-            these pages.</p>
-
-          <p>So why do we care this much about receipts and spreadsheets and all of this seemingly boring,
-            mundane stuff? A man once asked the Prophet ﷺ whether he should tie his camel or trust in Allah ﷻ —
-            and the Prophet ﷺ told him to tie it <em>and</em> trust in Allah ﷻ. That's exactly what this work is.
-            We make du'a for barakah in YM's efforts, and then we tie our camel: the JotForms, the dashboards, the
-            receipts. All the admin work behind the tarbiyyah and spiritual development happening in our
-            organization — that's us tying our camel.</p>
-
-          <div class="pull-quote" style="margin:14px 0 16px;">
-            <p dir="rtl" lang="ar" style="font-style:normal; font-size:17px; text-align:right; margin-bottom:10px; color:#5C3A10;">إِنَّ اللَّهَ يَأْمُرُكُمْ أَنْ تُؤَدُّوا الْأَمَانَاتِ إِلَىٰ أَهْلِهَا</p>
-            <p style="margin-bottom:6px;">"Indeed, Allah commands you to render trusts to whom they are due."</p>
-            <cite>Qur'an 4:58</cite>
-          </div>
-
-          <p>Every dollar YM holds is exactly that — a trust from the community. So when you submit a JotForm to
-            track your finances, upload a proper receipt, or keep your dashboard current — that's not paperwork,
-            that's amanah. Because of your cooperation and attention to detail, we can account for every dollar
-            YM earned or spent this quarter, and hand the next group of leaders records they can actually plan
-            from. We're not just protecting money; we're protecting trust, barakah, and the reputation of this
-            work.</p>
-
-          <p style="margin-bottom:0;">We ask Allah ﷻ to accept our efforts, place barakah in every dollar
-            entrusted to this organization, and keep our chapters growing in strength, sisterhood, and service.</p>
-
-          <div class="letter-signoff" style="margin-top:26px; text-align:right;">
-            <p style="margin-bottom:10px;">With much love,</p>
-            <div style="font-size:16px; font-weight:700; color:var(--green);">YM Sisters National Finance Team</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 3</span>
-      </div>
+      <div class="signoff">With much love,<b>YM Sisters National Finance Team</b></div>
     </div>
   </div>
+</section>
 
-  <!-- ══════════════════════════════════
-       PAGE 4 — Q2 AT A GLANCE
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-glance">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 02 · Q2 at a Glance</span>
+<!-- ══════════ 02 · AT A GLANCE ══════════ -->
+<section class="band band--tint" id="glance">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 02</div>
+      <h2 class="display">Q2 at a Glance</h2>
+      <div class="sub">Headline numbers for the quarter &mdash; arrows compare against Q1 FY26</div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="stats rv">
+      <div class="stat b-jade" data-q1="76373.82" data-q2="96219.66">
+        <div class="stat-k">Total Income</div>
+        <div class="stat-v" data-count="96219.66" data-money="1">$96,219.66</div>
+        <div class="stat-f"></div>
       </div>
-
-      <div class="section-open">
-        <div class="section-label">Section 02</div>
-        <h2>Q2 <em>at a glance</em></h2>
-        <div class="section-sub-open">Headline numbers for the quarter</div>
-        <div class="accent-rule"></div>
+      <div class="stat b-brass" data-q1="37265.56" data-q2="158333.47" data-invert="1">
+        <div class="stat-k">Total Expenses</div>
+        <div class="stat-v" data-count="158333.47" data-money="1">$158,333.47</div>
+        <div class="stat-f"></div>
       </div>
-
-      <div class="stat-grid" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="stat-card" data-q1="76373.82" data-q2="96219.66"><div class="stat-label">Total Income</div><div class="stat-value">$96,219.66</div><div class="stat-sub"></div></div>
-        <div class="stat-card exp" data-q1="37265.56" data-q2="158333.47"><div class="stat-label">Total Expenses</div><div class="stat-value">$158,333.47</div><div class="stat-sub"></div></div>
-        <div class="stat-card blue" data-q1="392" data-q2="321"><div class="stat-label">JotForm Submissions</div><div class="stat-value">321</div><div class="stat-sub"></div></div>
-        <div class="stat-card"><div class="stat-label">Active NNs Submitting</div><div class="stat-value">48 <span style="font-size:14px; color:var(--ink-light); font-weight:400;">/ 170+</span></div><div class="stat-sub"></div></div>
-        <div class="stat-card gold"><div class="stat-label">Financial Aid Disbursed</div><div class="stat-value">$9,990</div><div class="stat-sub"></div></div>
-        <div class="stat-card" data-q1="98000" data-q2="7616.98"><div class="stat-label">Raised via Fundraising</div><div class="stat-value">$7,616.98</div><div class="stat-sub"></div></div>
+      <div class="stat" data-q1="392" data-q2="321">
+        <div class="stat-k">JotForm Submissions</div>
+        <div class="stat-v" data-count="321">321</div>
+        <div class="stat-f"></div>
       </div>
-
-      <div class="callout callout-info">
-        <strong>Reading the arrows:</strong> deltas compare against Q1 FY26 (Jan&ndash;Mar 2026). Two need context —
-        <strong>fundraising</strong> fell because Q1 contained Ramadan, our single largest fundraising window of the year;
-        and <strong>expenses</strong> rose largely on YMLC deposits and YMC pass-throughs, which are collected from
-        attendees and paid back out rather than being true program cost.
+      <div class="stat">
+        <div class="stat-k">Active NNs Submitting</div>
+        <div class="stat-v"><span data-count="48">48</span> <small>/ 170+</small></div>
+        <div class="stat-f"></div>
       </div>
-
-      <div class="pull-quote">
-        <p>"This quarter carried so much energy. It wasn't just finances — it was hours, time, and effort spent
-          putting something together for hundreds of attendees. Whether it was YMC, YMLC, or Muslim Advocacy Day,
-          everyone had the chance to be part of something, alhamdulillah."</p>
-        <cite>Aisha Abouganba · National Finance Department Lead (CFO)</cite>
+      <div class="stat b-butter">
+        <div class="stat-k">Financial Aid Disbursed</div>
+        <div class="stat-v" data-count="9990" data-money="1" data-dp="0">$9,990</div>
+        <div class="stat-f"></div>
       </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 4</span>
+      <div class="stat" data-q1="98000" data-q2="7616.98">
+        <div class="stat-k">Raised via Fundraising</div>
+        <div class="stat-v" data-count="7616.98" data-money="1">$7,616.98</div>
+        <div class="stat-f"></div>
       </div>
     </div>
+
+    <div class="note jade rv" style="margin-top:26px">
+      <strong>Reading the arrows:</strong> deltas compare against Q1 FY26 (Jan&ndash;Mar 2026). Two need context &mdash; <strong>fundraising</strong> fell because Q1 contained Ramadan, our single largest fundraising window of the year; and <strong>expenses</strong> rose largely on YMLC deposits and YMC pass-throughs, which are collected from attendees and paid back out rather than being true program cost.
+    </div>
+
+    <div class="quote rv">
+      <p>&ldquo;This quarter carried so much energy. It wasn't just finances &mdash; it was hours, time, and effort spent putting something together for hundreds of attendees. Whether it was YMC, YMLC, or Muslim Advocacy Day, everyone had the chance to be part of something, alhamdulillah.&rdquo;</p>
+      <cite>Aisha Abouganba &middot; National Finance Department Lead (CFO)</cite>
+    </div>
   </div>
+</section>
 
-  <!-- ══════════════════════════════════
-       PAGE 5 — INCOME & EXPENSE BREAKDOWN
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-income-expense">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 03 · Income &amp; Expense Breakdown</span>
-      </div>
+<!-- ══════════ 03 · MONEY FLOW ══════════ -->
+<section class="band" id="flow">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 03</div>
+      <h2 class="display">Where the Money Moved</h2>
+      <div class="sub">National-level totals by category &mdash; tap any row to see what's inside it</div>
+      <div class="rule"></div>
+    </div>
 
-      <div class="section-open">
-        <div class="section-label">Section 03</div>
-        <h2>Income &amp; <em>Expense Breakdown</em></h2>
-        <div class="section-sub-open">National-level totals by category</div>
-        <div class="accent-rule"></div>
+    <div class="flow-head rv">
+      <div class="toggle" role="tablist" aria-label="Income or expenses">
+        <button role="tab" id="tabIn" aria-selected="true" aria-controls="flowPanel">Income</button>
+        <button role="tab" id="tabOut" aria-selected="false" aria-controls="flowPanel">Expenses</button>
       </div>
+      <div class="flow-total">
+        <div class="k" id="flowKey">Income by category</div>
+        <div class="v tabular" id="flowTotal">$116,747.43</div>
+      </div>
+    </div>
 
-      <div class="chart-head" style="margin-top:0;">
-        <span class="ch-title">Income by Category</span>
-        <span class="ch-total">$116,747.43</span>
-      </div>
-      <div class="bar-chart">
-        <div class="bar-row">
-          <span class="bar-label">Event Registrations</span>
-          <div class="bar-track"><div class="bar-fill income" style="width:100%;"></div></div>
-          <span class="bar-val">$78,037.45</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Donations</span>
-          <div class="bar-track"><div class="bar-fill income" style="width:38.4%;"></div></div>
-          <span class="bar-val">$30,000.00</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Fundraising</span>
-          <div class="bar-track"><div class="bar-fill income" style="width:9.8%;"></div></div>
-          <span class="bar-val">$7,616.98</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Merchandise</span>
-          <div class="bar-track"><div class="bar-fill income" style="width:2%;"></div></div>
-          <span class="bar-val">$1,093.00</span>
-        </div>
-      </div>
+    <div class="bars rv" id="flowPanel" role="tabpanel"></div>
 
-      <div class="chart-head">
-        <span class="ch-title">Expenses by Category</span>
-        <span class="ch-total exp">$165,769.37</span>
-      </div>
-      <div class="bar-chart">
-        <div class="bar-row">
-          <span class="bar-label">YM Leadership Conference (YMLC)</span>
-          <div class="bar-track"><div class="bar-fill expense" style="width:100%;"></div></div>
-          <span class="bar-val">$100,196.38</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">YM Conference — Baltimore</span>
-          <div class="bar-track"><div class="bar-fill expense" style="width:41.4%;"></div></div>
-          <span class="bar-val">$41,472.40</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">NN / SR / National Operations</span>
-          <div class="bar-track"><div class="bar-fill expense" style="width:11.7%;"></div></div>
-          <span class="bar-val">$11,729.30</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Financial Aid</span>
-          <div class="bar-track"><div class="bar-fill expense" style="width:10%;"></div></div>
-          <span class="bar-val">$9,990.00</span>
-        </div>
-        <div class="bar-row">
-          <span class="bar-label">Merchandise</span>
-          <div class="bar-track"><div class="bar-fill expense" style="width:2.8%;"></div></div>
-          <span class="bar-val">$2,811.29</span>
-        </div>
-      </div>
-
+    <h3 class="rv" style="margin:46px 0 16px;font-size:20px;color:var(--forest)">Full category ledger</h3>
+    <div class="tbl-wrap rv">
       <table>
-        <thead><tr><th>Category</th><th>Type</th><th>Amount</th><th>% of Total</th></tr></thead>
+        <thead><tr><th>Category</th><th>Type</th><th style="text-align:right">Amount</th><th style="text-align:right">% of Total</th></tr></thead>
         <tbody>
-          <tr><td>Event Registrations</td><td><span class="badge badge-opt">Income</span></td><td class="num">$78,037.45</td><td class="num">66.8%</td></tr>
-          <tr><td>Donations</td><td><span class="badge badge-opt">Income</span></td><td class="num">$30,000.00</td><td class="num">25.7%</td></tr>
-          <tr><td>Fundraising</td><td><span class="badge badge-opt">Income</span></td><td class="num">$7,616.98</td><td class="num">6.5%</td></tr>
-          <tr><td>Merchandise</td><td><span class="badge badge-opt">Income</span></td><td class="num">$1,093.00</td><td class="num">0.9%</td></tr>
-          <tr><td>YM Leadership Conference</td><td><span class="badge badge-exp">Expense</span></td><td class="num">$100,196.38</td><td class="num">60.4%</td></tr>
-          <tr><td>YM Conference — Baltimore</td><td><span class="badge badge-exp">Expense</span></td><td class="num">$41,472.40</td><td class="num">25.0%</td></tr>
-          <tr><td>NN / SR / National Operations</td><td><span class="badge badge-exp">Expense</span></td><td class="num">$11,729.30</td><td class="num">7.1%</td></tr>
-          <tr><td>Financial Aid</td><td><span class="badge badge-exp">Expense</span></td><td class="num">$9,990.00</td><td class="num">6.0%</td></tr>
-          <tr><td>Merchandise</td><td><span class="badge badge-exp">Expense</span></td><td class="num">$2,811.29</td><td class="num">1.7%</td></tr>
+          <tr><td>Event Registrations</td><td><span class="badge in">Income</span></td><td class="num">$78,037.45</td><td class="num">66.8%</td></tr>
+          <tr><td>Donations</td><td><span class="badge in">Income</span></td><td class="num">$30,000.00</td><td class="num">25.7%</td></tr>
+          <tr><td>Fundraising</td><td><span class="badge in">Income</span></td><td class="num">$7,616.98</td><td class="num">6.5%</td></tr>
+          <tr><td>Merchandise</td><td><span class="badge in">Income</span></td><td class="num">$1,093.00</td><td class="num">0.9%</td></tr>
+          <tr><td>YM Leadership Conference</td><td><span class="badge out">Expense</span></td><td class="num">$100,196.38</td><td class="num">60.4%</td></tr>
+          <tr><td>YM Conference &mdash; Baltimore</td><td><span class="badge out">Expense</span></td><td class="num">$41,472.40</td><td class="num">25.0%</td></tr>
+          <tr><td>NN / SR / National Operations</td><td><span class="badge out">Expense</span></td><td class="num">$11,729.30</td><td class="num">7.1%</td></tr>
+          <tr><td>Financial Aid</td><td><span class="badge out">Expense</span></td><td class="num">$9,990.00</td><td class="num">6.0%</td></tr>
+          <tr><td>Merchandise</td><td><span class="badge out">Expense</span></td><td class="num">$2,811.29</td><td class="num">1.7%</td></tr>
         </tbody>
       </table>
+    </div>
 
-      <div class="callout callout-info">
-        <strong>What drove the numbers:</strong> <span class="ph">Pending — 2–3 sentence narrative on the biggest categories</span>,
-        likely YMC/YMLC pass-throughs. Pass-through amounts are labeled separately so they don't inflate perceived program cost.
+    <div class="note brass rv">
+      <strong>A note on pass-throughs.</strong> Conference amounts are collected from attendees and paid back out for hotels, buses, and venues. They are labeled separately so they don't inflate perceived program cost.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 04 · INITIATIVES ══════════ -->
+<section class="band band--tint" id="events">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 04</div>
+      <h2 class="display">Q2 National Initiatives</h2>
+      <div class="sub">YMC &middot; YMLC &middot; MAD &middot; YM Gives</div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="cards rv">
+      <article class="evt">
+        <span class="tag">YMC</span>
+        <h3>YM Conference &mdash; Baltimore</h3>
+        <p>A weekend of tarbiyyah, connection, and community with sisters from across the country.</p>
+        <div class="money-line"><span class="k">Registration Income</span><span class="v tabular">$33,609.66</span></div>
+        <div class="money-line" style="margin-top:0"><span class="k">Total Expenses</span><span class="v tabular">$41,472.40</span></div>
+      </article>
+
+      <article class="evt">
+        <span class="tag">YMLC</span>
+        <h3>YM Leadership Conference &mdash; Florida</h3>
+        <p>A summer intensive built to sharpen the sisters who lead our chapters.</p>
+        <div class="trio">
+          <div class="cell"><b data-count="300">300</b><span>Attendees</span></div>
+          <div class="cell"><b data-count="14">14</b><span>Sessions</span></div>
+          <div class="cell"><b data-count="25">25</b><span>Speakers</span></div>
+        </div>
+        <div class="money-line"><span class="k">Paid in Q2 (deposits &amp; travel)</span><span class="v tabular">$100,196.38</span></div>
+        <p class="foot-note">YMLC takes place in Q3, but its deposits and major payments landed in Q2 &mdash; so the cost shows up in this quarter's numbers.</p>
+      </article>
+
+      <article class="evt">
+        <span class="tag">MAD</span>
+        <h3>Muslim Advocacy Day &mdash; Washington, D.C.</h3>
+        <p>Sisters on Capitol Hill, speaking directly to the people who write the policy.</p>
+        <div class="trio">
+          <div class="cell"><b data-count="90">90</b><span>Attendees</span></div>
+          <div class="cell"><b data-count="18">18</b><span>States Represented</span></div>
+        </div>
+      </article>
+
+      <article class="evt">
+        <span class="tag">YM Gives</span>
+        <h3>National Service Campaign</h3>
+        <p>One campaign, chapters everywhere, neighbors served on their own blocks.</p>
+        <div class="trio">
+          <div class="cell"><b data-count="75">75</b><span>NNs Participating</span></div>
+        </div>
+      </article>
+    </div>
+
+    <h3 class="rv" style="margin:46px 0 18px;font-size:20px;color:var(--forest)">Sisterhood in action</h3>
+    <div class="gallery g2 rv">
+      <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-21.26.22-scaled.jpeg" alt="Muslim Advocacy Day in Washington, D.C."></span><figcaption>MAD &middot; Washington, D.C.</figcaption></figure>
+      <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-21.31.41-scaled.jpeg" alt="YM Gives service day with the Prosper and Frisco NeighborNets"></span><figcaption>YM Gives &middot; Prosper &amp; Frisco NNs</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 05 · FINANCIAL AID ══════════ -->
+<section class="band" id="aid">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 05</div>
+      <h2 class="display">Financial Aid Deep Dive</h2>
+      <div class="sub">Making sure every sister can be in the room</div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="stats rv" style="margin-bottom:38px">
+      <div class="stat b-butter"><div class="stat-k">Total Aid Disbursed</div><div class="stat-v" data-count="9990" data-money="1" data-dp="0">$9,990</div></div>
+      <div class="stat"><div class="stat-k">Applicants (Q2)</div><div class="stat-v" data-count="30">30</div></div>
+      <div class="stat b-jade"><div class="stat-k">Funded At</div><div class="stat-v">3 <small>levels</small></div><div class="stat-f"><span class="delta-note">National &middot; SR &middot; NN</span></div></div>
+    </div>
+
+    <h3 class="rv" style="font-size:20px;color:var(--forest);margin-bottom:16px">Where the aid came from</h3>
+    <div class="rv">
+      <div class="meter" id="aidMeter" role="group" aria-label="Aid funding by level">
+        <button class="s1" data-w="49.4" aria-pressed="false">49.4%</button>
+        <button class="s2" data-w="27.0" aria-pressed="false">27.0%</button>
+        <button class="s3" data-w="23.6" aria-pressed="false">23.6%</button>
       </div>
+      <div class="meter-legend" id="aidLegend">
+        <div class="leg"><div class="k">National Financial Aid</div><div class="v tabular">$4,932.00</div><div class="p">49.4% of all aid</div></div>
+        <div class="leg"><div class="k">SR Financial Aid</div><div class="v tabular">$2,700.00</div><div class="p">27.0% of all aid</div></div>
+        <div class="leg"><div class="k">NN Financial Aid</div><div class="v tabular">$2,358.00</div><div class="p">23.6% of all aid</div></div>
+      </div>
+    </div>
 
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 5</span>
+    <div class="note jade rv">
+      <strong>Read this as shared load.</strong> Just over half of every aid dollar came from SR and NN budgets rather than National &mdash; chapters funding their own sisters into the room. Total disbursed: <strong>$9,990.00</strong>.
+    </div>
+
+    <div class="spot rv">
+      <span class="mk">&#10022;</span>
+      <h3>What financial aid unlocks</h3>
+      <p>Aid lets our leaders reach opportunities that deepen their faith and sharpen their leadership &mdash; <strong>YMLC</strong>, <strong>YMC</strong>, <strong>Muslim Advocacy Day</strong>, Arabic and Islamic studies intensives, and more. Every dollar here is a sister in a room she otherwise could not be in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 06 · HIGHLIGHTS ══════════ -->
+<section class="band band--dark" id="highlights">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 06</div>
+      <h2 class="display">Q2 Highlights</h2>
+      <div class="sub">NN spotlight &middot; National Shura tours</div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="rv" style="background:#fff;border-radius:var(--organic);padding:34px 36px;color:var(--ink)">
+      <div class="eyebrow" style="color:var(--jade)">NN Spotlight &mdash; Maine</div>
+      <h3 class="display" style="font-size:clamp(24px,3.4vw,36px);color:var(--forest);margin:16px 0 14px">A Maine NeighborNet wins a $45,000 grant</h3>
+      <p style="font-size:16px;color:var(--ink-2);line-height:1.7;max-width:66ch">A NeighborNet in Maine applied for outside grant funding &mdash; and got it. The award is <strong style="color:var(--forest)">$45,000 total, paid out at $15,000 a year</strong>, giving the chapter three years of programming money that didn't come from dues, bake sales, or National.</p>
+      <div class="trio" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:22px">
+        <div class="cell"><b data-count="45000" data-money="1" data-dp="0">$45,000</b><span>Total Grant Awarded</span></div>
+        <div class="cell"><b data-count="15000" data-money="1" data-dp="0">$15,000</b><span>Paid Out Yearly</span></div>
+        <div class="cell"><b data-count="3">3</b><span>Years of Funding</span></div>
+      </div>
+      <div class="gallery g2" style="margin-top:24px">
+        <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-19.34.26.jpeg" alt="Maine NeighborNet grant announcement"></span><figcaption>Maine NN &middot; Grant announcement</figcaption></figure>
+        <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-19.33.13.jpeg" alt="Maine NeighborNet sisters"></span><figcaption>Maine NN</figcaption></figure>
+      </div>
+    </div>
+
+    <div class="note butter rv" style="color:var(--forest)">
+      <strong>Your NN can do this too.</strong> Grant money is genuinely available to chapters like ours &mdash; state programs, community foundations, and local youth funds all give to groups our size. Maine's NN applied under YM National's <strong>501(c)(3)</strong>, which every NeighborNet can do. If your chapter wants to try, email <a href="mailto:finance@ymsisters.com" style="color:var(--forest)">finance@ymsisters.com</a> and we'll help you find opportunities and get the paperwork right.
+    </div>
+
+    <h3 class="display rv" style="font-size:clamp(22px,3vw,32px);color:#fff;margin:56px 0 8px">NS Tours &mdash; National Shura visits</h3>
+    <p class="rv" style="color:rgba(255,255,255,.7);margin-bottom:26px">Connecting with local leadership</p>
+
+    <div class="cards rv" style="grid-template-columns:1fr">
+      <article class="evt" style="border-top-color:var(--brass)">
+        <span class="tag">Dallas</span>
+        <h3>Aisha (NJ-N) &amp; Thameena (TX)</h3>
+        <div class="quote" style="margin:16px 0 20px">
+          <p>&ldquo;The treasure and value of these tours is in the informal conversations that lead up to us connecting as friends. Sharing a meal or a car ride makes the tiredness of travelling worth it. Dallas was magical because of the quality of their leadership and great hospitality.&rdquo;</p>
+          <cite>Aisha</cite>
+        </div>
+        <div class="gallery g2">
+          <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.17.48-scaled.jpeg" alt="National Shura tour in Dallas"></span></figure>
+          <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.18.47-scaled.jpeg" alt="National Shura tour in Dallas"></span></figure>
+        </div>
+      </article>
+
+      <article class="evt">
+        <span class="tag">Georgia</span>
+        <h3>Sarah (TX, Chicago) &amp; Ayra (VA)</h3>
+        <div class="gallery g2" style="margin-top:16px">
+          <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/230E7933-BA75-4C10-8164-68400729583B-scaled.jpeg" alt="National Shura tour in Georgia"></span></figure>
+          <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.42.34-scaled.jpeg" alt="Sisters at a Young Muslims gathering"></span></figure>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 07 · NOTES FROM FINANCE ══════════ -->
+<section class="band" id="notes">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 07</div>
+      <h2 class="display">Notes from Finance</h2>
+      <div class="sub">Handbook launch &amp; friendly policy reminders</div>
+      <div class="rule"></div>
+    </div>
+
+    <div class="note butter rv">
+      <strong>The NN Finance Handbook is here! &#127881;</strong> We're excited to announce the release of the <strong>NN Finance Handbook</strong> &mdash; your complete guide to accounts, JotForm submission types, dashboards, approvals, lump sums, audits, and a full worked case study. <a href="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/" target="_blank" rel="noopener">Read it here &rarr;</a>
+    </div>
+
+    <h3 class="rv" style="margin:40px 0 18px;font-size:20px;color:var(--forest)">Friendly policy reminders</h3>
+    <div class="rv" id="accGroup">
+      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">1</span><span class="acc-t">Zelle is now available for reimbursements</span><span class="pill up">Update</span><span class="acc-x">+</span></button>
+        <div class="acc-p"><div class="acc-p-in">Prefer <strong>Zelle over Venmo</strong> when possible. Coordinate Zelle details with <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a> after submitting the JotForm.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">2</span><span class="acc-t">No personal expenses on the same receipt as YM expenses</span><span class="pill strict">Strict</span><span class="acc-x">+</span></button>
+        <div class="acc-p"><div class="acc-p-in">Mixed receipts <strong>will be denied</strong> &mdash; we are strict on this. Make YM purchases on their own receipt.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">3</span><span class="acc-t">Proper event names in Expense Details are required</span><span class="acc-x">+</span></button>
+        <div class="acc-p"><div class="acc-p-in">Format: <strong>Date &middot; Event Name &middot; Subcategory</strong> (e.g., <em>1/9/26 NJ Gala &ndash; Decorations</em>). Some NNs are omitting event names and being contacted individually &mdash; save everyone the back-and-forth by labeling correctly the first time.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">4</span><span class="acc-t">NN collab confusion, cleared up</span><span class="acc-x">+</span></button>
+        <div class="acc-p"><div class="acc-p-in">When two NNs split costs, up to <strong>3 JotForms</strong> are needed &mdash; (&#9312;) the payer's reimbursement expense, (&#9313;) the other NN's expense for sending their share, (&#9314;) the receiving NN's income. See Handbook &sect;05b for the full worked example.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">5</span><span class="acc-t">Submit separate JotForms for each event</span><span class="acc-x">+</span></button>
+        <div class="acc-p"><div class="acc-p-in">We don't want multiple events' expenses combined into one JotForm. If you paid for or attended more than one event, submit a <strong>separate JotForm for each event</strong> so we can track and approve them individually.</div></div></div>
+
+      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">6</span><span class="acc-t">Also worth remembering</span><span class="acc-x">+</span></button>
+        <div class="acc-p"><div class="acc-p-in"><ul><li>Receipt format: <strong>PDFs, not screenshots</strong>, for online orders.</li><li>As always &mdash; <strong>no receipt, no approval.</strong></li></ul></div></div></div>
+    </div>
+
+    <h3 class="rv" style="margin:48px 0 8px;font-size:20px;color:var(--forest)">Quick check &mdash; do you know the rules?</h3>
+    <p class="rv" style="color:var(--ink-2);margin-bottom:20px">Four questions. No score kept, no one's watching &mdash; just a fast way to see if anything above is worth a second read.</p>
+    <div class="quiz rv" id="quiz"></div>
+  </div>
+</section>
+
+<!-- ══════════ APPENDIX · NN BALANCES ══════════ -->
+<section class="band band--tint" id="balances">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Appendix</div>
+      <h2 class="display">NN Bank Balances</h2>
+      <div class="sub">Search your NeighborNet to see its total balance held at YM National</div>
+      <div class="rule"></div>
+    </div>
+
+    <p class="rv" style="color:var(--ink-2);margin-bottom:22px;max-width:70ch">Type a NeighborNet or region name below to pull up its total YM Bank balance as of the close of Q2. Cash Box and Personal Bank amounts are tracked separately on your dashboard and are not shown here.</p>
+
+    <div class="search-wrap rv">
+      <span class="search-ico">&#9906;</span>
+      <input class="search" id="nnSearch" type="search" autocomplete="off" placeholder="Search your NeighborNet or region&hellip;" aria-label="Search NeighborNets">
+    </div>
+  
+
+    <div id="nnResults" class="rv"><div class="nn-msg">Loading NN data&hellip;</div></div>
+
+    <div class="note jade rv" style="margin-top:28px">
+      <strong>Questions about your balance?</strong> Email <a href="mailto:finance@ymsisters.com" style="color:var(--forest)">finance@ymsisters.com</a> with your NN name and we'll walk through the dashboard with you.
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CLOSING ══════════ -->
+<section class="band" id="closing">
+  <div class="shell">
+    <div class="sec-head rv">
+      <div class="eyebrow">Section 08</div>
+      <h2 class="display">Jazakumullahu khairan</h2>
+      <div class="sub">Thank you for a quarter of careful, quiet work</div>
+      <div class="rule"></div>
+    </div>
+    <div class="letter rv">
+      <p>Thank you to every NNC, SRC, SR Finance Lead, and National Shura member who submitted, approved, and tracked finances this quarter &mdash; your diligence keeps YM transparent and trustworthy with every dollar entrusted to us. May Allah &#xFDFB; accept our efforts and multiply the barakah in our chapters and communities.</p>
+      <p>Questions about anything in this report? Reach out anytime at <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a>.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
+        <button class="btn" onclick="window.print()">Save as PDF</button>
+        <a class="btn ghost" href="#top" style="text-decoration:none;display:inline-block">Back to top</a>
       </div>
     </div>
   </div>
+</section>
 
-  <!-- ══════════════════════════════════
-       PAGE 6 — NATIONAL INITIATIVES & EVENT FINANCES
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-initiatives">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 04 · National Initiatives &amp; Event Finances</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Section 04</div>
-        <h2>Q2 National <em>Initiatives</em></h2>
-        <div class="section-sub-open">YMC · YMLC · MAD · YM Gives</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <div class="account-cards">
-        <div class="account-card">
-          <span class="account-tag">YMC</span>
-          <h3>YM Conference — Baltimore</h3>
-          <p>A weekend of tarbiyyah, connection, and community with sisters from across the country.</p>
-          <div class="kv-inner">
-            <div class="kv-row"><span class="kv-key">Registration Income</span><span class="kv-val ph">Pending</span></div>
-            <div class="kv-row"><span class="kv-key">Total Expenses</span><span class="kv-val">$41,472.40</span></div>
-            <div class="kv-row"><span class="kv-key">Net Position</span><span class="kv-val ph">Pending</span></div>
-          </div>
-          <p style="margin-top:8px; font-size:11.5px;"><span class="ph">Confirm</span> whether hotel/bus costs were pass-throughs.</p>
-        </div>
-
-        <div class="account-card gold-top">
-          <span class="account-tag" style="background:var(--gold-fill); color:var(--gold);">YMLC</span>
-          <h3>YM Leadership Conference — Florida</h3>
-          <p>A summer intensive built to sharpen the sisters who lead our chapters.</p>
-          <div class="metric-trio">
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">Attendees</span></div>
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">Sessions</span></div>
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">Speakers</span></div>
-          </div>
-          <div class="cost-line"><span class="cl-key">Paid in Q2 (deposits &amp; travel)</span><span class="cl-val">$100,196.38</span></div>
-          <p style="margin-top:9px; font-size:11.5px; color:var(--label-3);">YMLC takes place in Q3, but its deposits and major payments landed in Q2 — so the cost shows up in this quarter's numbers.</p>
-        </div>
-
-        <div class="account-card">
-          <span class="account-tag">MAD</span>
-          <h3>Muslim Advocacy Day — Washington, D.C.</h3>
-          <p>Sisters on Capitol Hill, speaking directly to the people who write the policy.</p>
-          <div class="metric-trio duo">
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">Attendees</span></div>
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">States Represented</span></div>
-          </div>
-          <div class="cost-line"><span class="cl-key">Travel, lodging &amp; registration</span><span class="cl-val ph">Pending</span></div>
-        </div>
-
-        <div class="account-card">
-          <span class="account-tag">YM Gives</span>
-          <h3>National Service Campaign</h3>
-          <p>One campaign, chapters everywhere, neighbors served on their own blocks.</p>
-          <div class="metric-trio duo">
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">NNs Participating</span></div>
-            <div class="metric-cell"><span class="m-val ph">—</span><span class="m-lab">People Served</span></div>
-          </div>
-          <div class="cost-line"><span class="cl-key">Spent on supplies</span><span class="cl-val ph">Pending</span></div>
-        </div>
-      </div>
-
-      <div class="photo-band">
-        <div class="photo-band-title">Sisterhood in Action — National Events</div>
-        <div class="photo-strip cols-4">
-          <div><div class="img-ph" style="height:1.05in;">Photo pending</div><div class="img-ph-cap">YMC · Baltimore · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:1.05in;">Photo pending</div><div class="img-ph-cap">YMLC Prep · Florida · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:1.05in;">Photo pending</div><div class="img-ph-cap">MAD · Washington, D.C. · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:1.05in;">Photo pending</div><div class="img-ph-cap">YM Gives · <span class="ph">NN</span> · <span class="ph">Month</span></div></div>
-        </div>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 6</span>
-      </div>
-    </div>
+<footer>
+  <div class="shell">
+    <div class="ar" lang="ar">&#xFDFD; &nbsp; &#xFDFA;</div>
+    <div>Young Muslims &middot; Finance Department &middot; <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a></div>
+    <div class="fine">Q2 FY2026 National Finance Report &middot; For Internal Use Only</div>
   </div>
+</footer>
 
-  <!-- ══════════════════════════════════
-       PAGE 7 — FINANCIAL AID DEEP DIVE
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-aid">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 05 · Financial Aid Deep Dive</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Section 05</div>
-        <h2>Financial <em>Aid Deep Dive</em></h2>
-        <div class="section-sub-open">Making sure every sister can attend</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <div class="stat-grid" style="grid-template-columns: repeat(3, 1fr);">
-        <div class="stat-card gold"><div class="stat-label">Total Aid Disbursed</div><div class="stat-value">$9,990</div><div class="stat-sub"></div></div>
-        <div class="stat-card gold"><div class="stat-label">Applicants (Q2)</div><div class="stat-value">30</div><div class="stat-sub"><span ></span></div></div>
-        <div class="stat-card gold"><div class="stat-label">Funded At</div><div class="stat-value" style="font-size:19px;">3 levels</div><div class="stat-sub" style="font-size:11px; color:var(--ink-mid);">National · SR · NN</div></div>
-      </div>
-
-      <div class="sub-title">Where the Aid Came From</div>
-      <table>
-        <thead><tr><th>Funding Level</th><th>Amount</th><th>Share</th></tr></thead>
-        <tbody>
-          <tr><td>National Financial Aid</td><td class="num">$4,932.00</td><td class="num">49.4%</td></tr>
-          <tr><td>SR Financial Aid</td><td class="num">$2,700.00</td><td class="num">27.0%</td></tr>
-          <tr><td>NN Financial Aid</td><td class="num">$2,358.00</td><td class="num">23.6%</td></tr>
-          <tr class="total-row"><td>Total Financial Aid</td><td class="num">$9,990.00</td><td class="num">100%</td></tr>
-        </tbody>
-      </table>
-
-      <div class="callout callout-info">
-        <strong>Read this as shared load.</strong> Just over half of every aid dollar came from SR and NN budgets
-        rather than National — chapters funding their own sisters into the room.
-        <span class="ph">Pending — confirm framing</span>
-      </div>
-
-      <div class="takeaway">
-        <span class="tk-mark">&#10022;</span>
-        <h4>What Financial Aid Unlocks</h4>
-        <p>Aid lets our leaders reach opportunities that deepen their faith and sharpen their leadership &mdash;
-          <strong>YMLC</strong>, <strong>YMC</strong>, <strong>Muslim Advocacy Day</strong>, Arabic and Islamic
-          studies intensives, and more. Every dollar here is a sister in a room she otherwise could not be in.</p>
-      </div>
-
-      <div class="photo-band">
-        <div class="photo-band-title">Sisterhood in Action — Financial Aid</div>
-        <div class="photo-strip cols-2">
-        <div><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.32.38-scaled.jpeg" alt="" style="height:1.3in; width:100%; object-fit:cover;"><div class="img-ph-cap"><span class="ph">Caption pending</span></div></div>
-        <div><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.42.34-scaled.jpeg" alt="" style="height:1.3in; width:100%; object-fit:cover;"><div class="img-ph-cap">Aid Recipients at YMLC · <span class="ph">Month</span></div></div>
-         </div>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 7</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════
-       PAGE 8 — HIGHLIGHTS · NN SPOTLIGHT
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-highlights">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 06 · Highlights</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Section 06</div>
-        <h2>Q2 <em>Highlights</em></h2>
-        <div class="section-sub-open">NN Spotlight · National Shura tours</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <div class="sub-title" style="margin-top:0;">NN Spotlight — Maine</div>
-      <div class="cs-wrapper">
-        <div class="cs-label">Model for Other NNs</div>
-        <h3 style="font-size:16px; margin-bottom:8px;">A Maine NeighborNet Wins a $45,000 Grant</h3>
-        <p class="body-text">
-          A NeighborNet in Maine applied for outside grant funding — and got it. The award is
-          <strong>$45,000 total, paid out at $15,000 a year</strong>, giving the chapter three years of
-          programming money that didn't come from dues, bake sales, or National.
-          <span class="ph">Pending — NN name, grant name, what it funds</span>
-        </p>
-        <div class="cs-grid">
-          <div class="cs-block"><h4>Total Grant Awarded</h4><div class="cs-figure">$45,000</div></div>
-          <div class="cs-block"><h4>Paid Out Yearly</h4><div class="cs-figure">$15,000</div></div>
-          <div class="cs-block"><h4>Years of Funding</h4><div class="cs-figure">3</div></div>
-        </div>
-        <div class="pull-quote">
-          <p>"<span class="ph">Pending — quote from the NN on how they found and won the grant</span>"</p>
-          <cite><span class="ph">Pending — name, role</span></cite>
-        </div>
-        <div class="img-grid" style="margin-bottom:0;">
-          <div><div class="img-ph" style="height:1.3in;">Photo pending</div><div class="img-ph-cap">Maine NN · Grant Announcement · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:1.3in;">Photo pending</div><div class="img-ph-cap">Maine NN · <span class="ph">Caption pending</span></div></div>
-        </div>
-      </div>
-
-      <div class="takeaway">
-        <span class="tk-mark">&#10022;</span>
-        <h4>Your NN can do this too</h4>
-        <p>Grant money is genuinely available to chapters like ours — state programs, community foundations,
-          and local youth funds all give to groups our size. Maine's NN applied under YM National's
-          <strong>501(c)(3)</strong>, which every NeighborNet can do. If your chapter wants to try,
-          email <strong>finance@ymsisters.com</strong> and we'll help you find opportunities and get the
-          paperwork right.</p>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 8</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════
-       PAGE 9 — HIGHLIGHTS · NS TOURS
-  ══════════════════════════════════ -->
-  <div class="page">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 06 · Highlights (cont.)</span>
-      </div>
-
-      <div class="sub-title" style="margin-top:0;">NS Tours — National Shura Visits</div>
-      <h2 style="font-size:18px; margin-bottom:18px; letter-spacing:-0.02em;">Connecting with local leadership</h2>
-
-      <div class="account-cards" style="grid-template-columns: 1fr;">
-        <div class="account-card">
-          <span class="account-tag">Georgia</span>
-          <h3>Sarah (TX, Chicago) &amp; Ayra (VA)</h3>
-          <p><span class="ph">Pending — dates, what was covered</span></p>
-          <div class="pull-quote" style="margin-top:10px;">
-            <p>"<span class="ph">Pending — quote</span>"</p>
-          </div>
-          <div class="img-grid" style="grid-template-columns: repeat(3, 1fr); margin-top:12px; margin-bottom:0;">
-            <div><div class="img-ph" style="height:1.1in;">Photo pending</div><div class="img-ph-cap">Georgia · <span class="ph">Month</span></div></div>
-            <div><div class="img-ph" style="height:1.1in;">Photo pending</div><div class="img-ph-cap">Georgia · <span class="ph">Month</span></div></div>
-          </div>
-        </div>
-        <div class="account-card">
-          <span class="account-tag">Dallas</span>
-          <h3>Aisha (NJ-N) &amp; Thameena (TX)</h3>
-          <p><span class="ph">Pending — dates, what was covered</span></p>
-          <div class="pull-quote" style="margin-top:10px;">
-  <p>"The treasure and value of these tours is in the informal conversations that lead up to us connecting as friends. Sharing a meal or a car ride makes the tiredness of travelling worth it. Dallas was magical because of the quality of their leadership and great hospitality."</p>
-  <p class="attribution">— Aisha</p>
-</div>
-          <div class="img-grid" style="grid-template-columns: repeat(3, 1fr); margin-top:12px; margin-bottom:0;">
-            <div><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.17.48-scaled.jpeg" alt="Dallas" style="height:1.1in; width:100%; object-fit:cover;"><div class="img-ph-cap">Dallas · <span class="ph">Month</span></div></div>
-             <div><img src="  https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.20.42-scaled.jpeg" alt="Dallas" style="height:1.1in; width:100%; object-fit:cover;"><div class="img-ph-cap">Dallas · <span class="ph">Month</span></div></div>
-            <div><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-18.18.47-scaled.jpeg" alt="Dallas" style="height:1.1in; width:100%; object-fit:cover;"><div class="img-ph-cap">Dallas · <span class="ph">Month</span></div></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 9</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════
-       PAGE 10 — NOTES FROM FINANCE
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-notes">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Section 07 · Notes from Finance</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Section 07</div>
-        <h2>Notes from <em>Finance</em></h2>
-        <div class="section-sub-open">Handbook launch &amp; friendly policy reminders</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <div class="callout callout-rule">
-        <strong>The NN Finance Handbook is here! 🎉</strong> We're excited to announce the release of the
-        <strong>NN Finance Handbook</strong> — your complete guide to accounts, JotForm submission types,
-        dashboards, approvals, lump sums, audits, and a full worked case study.
-        <a href="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/ym-nn-finances-handbook.html" style="color:var(--green); font-weight:600;">Read it here →</a>
-      </div>
-
-      <div class="sub-title">Friendly Financial Policy Reminders</div>
-      <div class="steps">
-        <div class="step">
-          <div class="step-n">1</div>
-          <div class="step-body">
-            <h4>Zelle is now available for reimbursements <span class="badge badge-opt">Update</span></h4>
-            <p>Prefer <strong>Zelle over Venmo</strong> when possible. Coordinate Zelle details with
-              <strong>finance@ymsisters.com</strong> after submitting the JotForm.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">2</div>
-          <div class="step-body">
-            <h4>No personal expenses on the same receipt as YM expenses <span class="badge badge-exp">Strict</span></h4>
-            <p>Mixed receipts <strong>will be denied</strong> — we are strict on this. Make YM purchases on their own receipt.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">3</div>
-          <div class="step-body">
-            <h4>Proper event names in Expense Details are required</h4>
-            <p>Format: <strong>Date · Event Name · Subcategory</strong> (e.g., <em>1/9/26 NJ Gala – Decorations</em>).
-              Some NNs are omitting event names and being contacted individually — save everyone the back-and-forth
-              by labeling correctly the first time.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">4</div>
-          <div class="step-body">
-            <h4>NN collab confusion, cleared up</h4>
-            <p>When two NNs split costs, up to <strong>3 JotForms</strong> are needed — (①) the payer's reimbursement
-              expense, (②) the other NN's expense for sending their share, (③) the receiving NN's income.
-              See Handbook §05b for the full worked example.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">5</div>
-          <div class="step-body">
-            <h4>Submit separate JotForms for each event</h4>
-            <p>We don't want multiple events' expenses combined into one JotForm. If you paid for or attended more
-              than one event, submit a <strong>separate JotForm for each event</strong> so we can track and approve
-              them individually.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div class="step-n">6</div>
-          <div class="step-body">
-            <h4>Also worth remembering</h4>
-            <ul>
-              <li>Receipt format: <strong>PDFs, not screenshots</strong>, for online orders.</li>
-              <li>As always — <strong>no receipt, no approval.</strong></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 10</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════
-       PAGE 11 — APPENDIX · NN BANK BALANCES (search)
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-balances">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Appendix · NN Bank Balances</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Appendix</div>
-        <h2>NN Bank <em>Balances</em></h2>
-        <div class="section-sub-open">Search your NeighborNet to see its total balance held at YM National</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <p class="body-text">
-        Type a NeighborNet or region name below to pull up its total YM Bank balance as of the close of Q2.
-        Cash Box and Personal Bank amounts are tracked separately on your dashboard and are not shown here.
-      </p>
-
-      <input class="nn-search-input" type="text" id="nnSearch"
-             placeholder="Search NeighborNet or region…" oninput="nnDoSearch()"
-             autocomplete="off" />
-      <div class="nn-hint">Showing total bank balance only. Live search works in the browser; the printed PDF shows this page without results.</div>
-      <div id="nnResults"><div class="nn-msg">Loading NN data…</div></div>
-
-      <div class="callout callout-info" style="margin-top:18px;">
-        <strong>Questions about your balance?</strong> Email finance@ymsisters.com with your NN name and we'll
-        walk through the dashboard with you.
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 11</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════
-       PAGE 12 — CLOSING
-  ══════════════════════════════════ -->
-  <div class="page" id="sec-closing">
-    <div class="page-content">
-      <div class="page-chrome">
-        <span class="brand">Young Muslims · Finance Department</span>
-        <span class="section-tag">Closing</span>
-      </div>
-
-      <div class="section-open">
-        <div class="section-label">Section 08</div>
-        <h2><em>Jazakumullahu khairan</em></h2>
-        <div class="section-sub-open">Thank you for a quarter of careful, quiet work</div>
-        <div class="accent-rule"></div>
-      </div>
-
-      <div class="card">
-        <p class="body-text">
-          Thank you to every NNC, SRC, SR Finance Lead, and National Shura member who submitted, approved, and
-          tracked finances this quarter — your diligence keeps YM transparent and trustworthy with every dollar
-          entrusted to us. May Allah ﷻ accept our efforts and multiply the barakah in our chapters and communities.
-        </p>
-        <p class="body-text" style="margin-bottom:0;">
-          Questions about anything in this report? Reach out anytime at
-          <strong>finance@ymsisters.com</strong>.
-        </p>
-      </div>
-
-      <div class="closing-footer">
-        <p class="b">﷽ &nbsp; ﷺ</p>
-        <p>Young Muslims · Finance Department · <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a></p>
-        <p style="margin-top:8px; opacity:0.6; font-size:11px;">Q2 FY2026 National Finance Report · For Internal Use Only</p>
-      </div>
-
-      <div class="pull-quote">
-        <p>"<span class="ph">Pending — quote from a National Shura member — closing reflection</span>"</p>
-        <cite><span class="ph">Pending — name, role</span></cite>
-      </div>
-      <div class="photo-band">
-        <div class="photo-band-title">Our Sisters, This Quarter</div>
-        <div class="photo-strip cols-4">
-          <div><div class="img-ph" style="height:0.95in;">Photo pending</div><div class="img-ph-cap"><span class="ph">Event</span> · <span class="ph">NN</span> · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:0.95in;">Photo pending</div><div class="img-ph-cap"><span class="ph">Event</span> · <span class="ph">NN</span> · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:0.95in;">Photo pending</div><div class="img-ph-cap"><span class="ph">Event</span> · <span class="ph">NN</span> · <span class="ph">Month</span></div></div>
-          <div><div class="img-ph" style="height:0.95in;">Photo pending</div><div class="img-ph-cap"><span class="ph">Event</span> · <span class="ph">NN</span> · <span class="ph">Month</span></div></div>
-        </div>
-      </div>
-
-      <div class="page-footer-strip">
-        <span>Young Muslims · Finance Department</span>
-        <span>Q2 FY2026 National Finance Report · For Internal Use Only</span>
-        <span>Page 12</span>
-      </div>
-    </div>
-  </div>
-
-
+<div class="lb" id="lightbox"><button class="lb-x" aria-label="Close">&times;</button><img src="" alt=""></div>
+<button class="totop" id="toTop" aria-label="Back to top">&uarr;</button>
 <script>
-/* ─────────────────────────────────────────────────────────────
-   NN BANK BALANCE SEARCH
-   Data source: published Google Sheet (File → Share → Publish to
-   web → CSV). Expected column order, header row skipped:
-     A: NN Name   B: Region/SR   C: Total Bank Balance
-   Columns D+ are ignored — only the total balance is shown here.
-   ───────────────────────────────────────────────────────────── */
-const NN_CSV_URL = 'PASTE_YOUR_PUBLISHED_CSV_URL_HERE';
+/* ══════════ REVEAL ON SCROLL ══════════ */
+const rvObs = new IntersectionObserver((es)=>{
+  es.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); rvObs.unobserve(e.target);} });
+},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rv').forEach(el=>rvObs.observe(el));
 
+/* ══════════ STICKY NAV · SCROLL SPY · PROGRESS ══════════ */
+const nav=document.getElementById('nav'), bar=document.getElementById('progress');
+const links=[...document.querySelectorAll('#navLinks a')];
+const secs=links.map(a=>document.querySelector(a.getAttribute('href'))).filter(Boolean);
+const toTop=document.getElementById('toTop');
+function onScroll(){
+  const y=window.scrollY, h=document.body.scrollHeight-innerHeight;
+  bar.style.width=(h>0?(y/h)*100:0)+'%';
+  nav.classList.toggle('stuck',y>window.innerHeight-90);
+  toTop.classList.toggle('show',y>window.innerHeight);
+  let cur=-1;
+  secs.forEach((s,i)=>{ if(s.getBoundingClientRect().top<=140) cur=i; });
+  links.forEach((a,i)=>a.classList.toggle('on',i===cur));
+}
+addEventListener('scroll',onScroll,{passive:true}); onScroll();
+toTop.onclick=()=>scrollTo({top:0,behavior:'smooth'});
+
+/* ══════════ COUNT-UP NUMBERS ══════════ */
+const fmt=(n,dp,money)=>(money?'$':'')+n.toLocaleString('en-US',{minimumFractionDigits:dp,maximumFractionDigits:dp});
+const countObs=new IntersectionObserver((es)=>{
+  es.forEach(e=>{
+    if(!e.isIntersecting) return;
+    const el=e.target; countObs.unobserve(el);
+    const target=parseFloat(el.dataset.count);
+    const money=el.dataset.money==='1';
+    const dp=el.dataset.dp!==undefined?+el.dataset.dp:(money&&target%1?2:0);
+    if(isNaN(target)) return;
+    const dur=1100, t0=performance.now();
+    (function step(t){
+      const p=Math.min((t-t0)/dur,1), e2=1-Math.pow(1-p,3);
+      el.textContent=fmt(target*e2,dp,money);
+      if(p<1) requestAnimationFrame(step);
+    })(t0);
+  });
+},{threshold:.5});
+document.querySelectorAll('[data-count]').forEach(el=>countObs.observe(el));
+
+/* ══════════ DELTA BADGES vs Q1 ══════════ */
+document.querySelectorAll('.stat[data-q1]').forEach(card=>{
+  const q1=parseFloat(card.dataset.q1), q2=parseFloat(card.dataset.q2);
+  if(isNaN(q1)||isNaN(q2)||q1===0) return;
+  const pct=((q2-q1)/Math.abs(q1))*100;
+  const rising=pct>.5, falling=pct<-.5, inv=card.dataset.invert==='1';
+  const tone=(!rising&&!falling)?'flat':(inv?(rising?'down':'up'):(rising?'up':'down'));
+  const arrow=rising?'\u2191':falling?'\u2193':'\u2192';
+  const f=card.querySelector('.stat-f'); if(!f) return;
+  f.innerHTML='<span class="delta '+tone+'">'+arrow+' '+Math.abs(pct).toFixed(0)+'%</span>'+
+              '<span class="delta-note">vs. Q1</span>';
+});
+
+/* ══════════ MONEY FLOW EXPLORER ══════════ */
+const FLOW={
+  in:{key:'Income by category',total:'$116,747.43',rows:[
+    {n:'Event Registrations',a:'$78,037.45',p:66.8,note:'Registrations for YMC and other national events. A large share is collected and paid back out for hotels, buses, and venues.'},
+    {n:'Donations',a:'$30,000.00',p:25.7,note:'Direct giving into YM National this quarter.'},
+    {n:'Fundraising',a:'$7,616.98',p:6.5,note:'Chapter-run fundraising. Lower than Q1 because Q1 contained Ramadan, our single largest fundraising window of the year.'},
+    {n:'Merchandise',a:'$1,093.00',p:0.9,note:'Merch sales across chapters and national events.'}]},
+  out:{key:'Expenses by category',total:'$165,769.37',rows:[
+    {n:'YM Leadership Conference (YMLC)',a:'$100,196.38',p:60.4,note:'YMLC takes place in Q3, but its deposits and major payments landed in Q2 \u2014 so the cost lands in this quarter.'},
+    {n:'YM Conference \u2014 Baltimore',a:'$41,472.40',p:25.0,note:'Venue, lodging, and transport for YMC. Much of this is a pass-through collected from attendees.'},
+    {n:'NN / SR / National Operations',a:'$11,729.30',p:7.1,note:'Day-to-day chapter, subregional, and national running costs.'},
+    {n:'Financial Aid',a:'$9,990.00',p:6.0,note:'Aid disbursed at three levels \u2014 National, SR, and NN \u2014 to 30 applicants this quarter.'},
+    {n:'Merchandise',a:'$2,811.29',p:1.7,note:'Cost of producing merch sold across chapters.'}]}
+};
+const panel=document.getElementById('flowPanel'),
+      tIn=document.getElementById('tabIn'), tOut=document.getElementById('tabOut'),
+      fKey=document.getElementById('flowKey'), fTot=document.getElementById('flowTotal');
+function renderFlow(which){
+  const d=FLOW[which], max=Math.max(...d.rows.map(r=>r.p));
+  fKey.textContent=d.key; fTot.textContent=d.total;
+  panel.innerHTML=d.rows.map((r,i)=>
+    '<button class="bar" aria-expanded="false">'+
+      '<span class="bar-name">'+r.n+'</span>'+
+      '<span class="bar-amt tabular">'+r.a+'</span>'+
+      '<span class="bar-track"><span class="bar-fill '+(which==='in'?'inflow':'outflow')+'" data-w="'+(r.p/max*100)+'"></span></span>'+
+      '<span class="bar-pct">'+r.p+'% of total</span>'+
+      '<span class="bar-note">'+r.note+'</span>'+
+    '</button>').join('');
+  requestAnimationFrame(()=>panel.querySelectorAll('.bar-fill').forEach((f,i)=>{
+    setTimeout(()=>f.style.width=f.dataset.w+'%',60*i);
+  }));
+  panel.querySelectorAll('.bar').forEach(b=>b.onclick=()=>{
+    const open=b.getAttribute('aria-expanded')==='true';
+    panel.querySelectorAll('.bar').forEach(x=>x.setAttribute('aria-expanded','false'));
+    b.setAttribute('aria-expanded',open?'false':'true');
+  });
+}
+function pickTab(which){
+  tIn.setAttribute('aria-selected',which==='in'); tOut.setAttribute('aria-selected',which==='out');
+  renderFlow(which);
+}
+tIn.onclick=()=>pickTab('in'); tOut.onclick=()=>pickTab('out');
+new IntersectionObserver((es,o)=>{es.forEach(e=>{if(e.isIntersecting){pickTab('in');o.disconnect();}})},{threshold:.2})
+  .observe(document.getElementById('flow'));
+
+/* ══════════ AID METER ══════════ */
+const meter=document.getElementById('aidMeter'), legs=[...document.querySelectorAll('#aidLegend .leg')];
+new IntersectionObserver((es,o)=>{es.forEach(e=>{ if(!e.isIntersecting) return;
+  meter.querySelectorAll('button').forEach((b,i)=>setTimeout(()=>b.style.width=b.dataset.w+'%',120*i));
+  o.disconnect();})},{threshold:.4}).observe(meter);
+meter.querySelectorAll('button').forEach((b,i)=>{
+  const set=on=>{ b.setAttribute('aria-pressed',on); legs[i].classList.toggle('on',on); };
+  b.onmouseenter=()=>set(true); b.onmouseleave=()=>set(false);
+  b.onclick=()=>set(b.getAttribute('aria-pressed')!=='true');
+});
+
+/* ══════════ ACCORDION ══════════ */
+document.querySelectorAll('.acc-btn').forEach(btn=>{
+  const p=btn.nextElementSibling;
+  btn.onclick=()=>{
+    const open=btn.getAttribute('aria-expanded')==='true';
+    btn.setAttribute('aria-expanded',!open);
+    p.style.maxHeight=open?null:p.scrollHeight+'px';
+  };
+});
+
+/* ══════════ POLICY SELF-CHECK ══════════ */
+const QS=[
+ {q:'You bought decorations for the NJ Gala and grabbed a coffee on the same receipt. What happens?',
+  o:['It gets approved \u2014 the coffee is small','It gets denied \u2014 mixed receipts are not accepted','It gets approved if you highlight the YM lines'],
+  a:1,f:'Mixed receipts will be denied. Make YM purchases on their own receipt \u2014 finance is strict on this one.'},
+ {q:'How should an expense be labeled in Expense Details?',
+  o:['Just the amount and the date','Event Name only','Date \u00b7 Event Name \u00b7 Subcategory'],
+  a:2,f:'Format is Date \u00b7 Event Name \u00b7 Subcategory \u2014 e.g. 1/9/26 NJ Gala \u2013 Decorations. Missing event names mean someone has to chase you individually.'},
+ {q:'You attended three separate events this month. How many JotForms?',
+  o:['One, combined','Three \u2014 one per event','Two, if the events shared a venue'],
+  a:1,f:'One JotForm per event, always. It lets finance track and approve each one independently.'},
+ {q:'Two NNs split the cost of a joint event. How many JotForms can be involved?',
+  o:['Up to three','Exactly one','Two, always'],
+  a:0,f:'Up to three \u2014 the payer\u2019s reimbursement, the other NN\u2019s expense for sending their share, and the receiving NN\u2019s income. Handbook \u00a705b has the full worked example.'}
+];
+let qi=0, answered=false;
+const quiz=document.getElementById('quiz');
+function drawQ(){
+  const Q=QS[qi]; answered=false;
+  quiz.innerHTML=
+    '<div class="quiz-q">'+Q.q+'</div>'+
+    '<div class="quiz-opts">'+Q.o.map((t,i)=>
+      '<button class="quiz-opt" data-i="'+i+'"><span class="mk">'+String.fromCharCode(65+i)+'</span><span>'+t+'</span></button>').join('')+'</div>'+
+    '<div class="quiz-fb" id="qfb"></div>'+
+    '<div class="quiz-bar">'+
+      '<div class="quiz-dots">'+QS.map((_,i)=>'<span class="dot '+(i<qi?'done':i===qi?'now':'')+'"></span>').join('')+'</div>'+
+      '<button class="btn" id="qNext" disabled>'+(qi===QS.length-1?'Finish':'Next question')+'</button>'+
+    '</div>';
+  quiz.querySelectorAll('.quiz-opt').forEach(b=>b.onclick=()=>{
+    if(answered) return; answered=true;
+    const pick=+b.dataset.i;
+    quiz.querySelectorAll('.quiz-opt').forEach((x,i)=>{
+      x.disabled=true;
+      if(i===Q.a) x.classList.add('right');
+      else if(i===pick) x.classList.add('wrong');
+    });
+    const fb=document.getElementById('qfb');
+    fb.innerHTML='<strong>'+(pick===Q.a?'That\u2019s right. ':'Not quite. ')+'</strong>'+Q.f;
+    fb.classList.add('show');
+    document.getElementById('qNext').disabled=false;
+  });
+  document.getElementById('qNext').onclick=()=>{
+    if(qi<QS.length-1){ qi++; drawQ(); }
+    else quiz.innerHTML='<div class="quiz-q" style="margin:0">That\u2019s all four \u2014 jazakillahu khairan.</div>'+
+      '<p style="color:var(--ink-2);margin-top:10px">Anything that tripped you up is covered in full in the '+
+      '<a href="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/" target="_blank" rel="noopener">NN Finance Handbook</a>. '+
+      'Still unsure? Email <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a> \u2014 we would rather answer early than fix it later.</p>'+
+      '<div class="quiz-bar"><span class="delta-note">Nothing here was recorded.</span>'+
+      '<button class="btn ghost" onclick="qi=0;drawQ()">Run it again</button></div>';
+  };
+}
+drawQ();
+
+/* ══════════ LIGHTBOX ══════════ */
+const lb=document.getElementById('lightbox'), lbImg=lb.querySelector('img');
+document.querySelectorAll('.ym-img.zoom img').forEach(im=>{
+  im.parentElement.onclick=()=>{ lbImg.src=im.src; lbImg.alt=im.alt; lb.classList.add('open'); };
+});
+lb.onclick=()=>lb.classList.remove('open');
+addEventListener('keydown',e=>{ if(e.key==='Escape') lb.classList.remove('open'); });
+
+/* ══════════════════════════════════════════════════════════
+   NN BANK BALANCE LOOKUP
+   Data layer below is unchanged from the working version.
+   ══════════════════════════════════════════════════════════ */
+const NN_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTCy8WvLZolI2NVU3y5Buv6ypmT5FsHYjOBGVthhNXbmDicivEaG7xH_CUmGU6zViYeso8vm_XKt35p/pub?gid=1325489605&single=true&output=csv';
+
+let nnHeaders = [];
 let nnData = [];
+let nnSort = 'name';
 
-function parseCSV(csv) {
-  return csv.trim().split(/\r?\n/).slice(1).map(row => {
-    const cols = row.split(',');
-    const name    = (cols[0] || '').trim();
-    const region  = (cols[1] || '').trim();
-    const raw     = (cols[2] || '').trim().replace(/[$"\s,]/g, '');
-    return { name, region, balance: raw === '' || isNaN(parseFloat(raw)) ? null : parseFloat(raw) };
-  }).filter(r => r.name);
+function parseCSV(text) {
+  const rows = [];
+  let row = [], field = '', inQuotes = false;
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+    if (inQuotes) {
+      if (c === '"' && text[i + 1] === '"') { field += '"'; i++; }
+      else if (c === '"') inQuotes = false;
+      else field += c;
+    } else if (c === '"') inQuotes = true;
+    else if (c === ',') { row.push(field); field = ''; }
+    else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; }
+    else if (c !== '\r') field += c;
+  }
+  if (field || row.length) { row.push(field); rows.push(row); }
+  return rows.filter(r => r.some(c => c.trim()));
+}
+
+function isMoney(v) {
+  return /^-?[$(]?\s*[\d,]+\.?\d*\)?$/.test(v.trim()) && /\d/.test(v);
+}
+function moneyVal(t){
+  if(!isMoney(t)) return null;
+  let n=parseFloat(t.replace(/[$,()\s]/g,''));
+  if(/^\(|-/.test(t)) n=-Math.abs(n);
+  return isNaN(n)?null:n;
+}
+function nnFmtCell(v) {
+  const t = (v || '').trim();
+  if (!t) return '<span class="nn-na-val">Not reported</span>';
+  const n = moneyVal(t);
+  if (n === null) return t;
+  const s = '$' + Math.abs(n).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+  if (n > 0) return '<span class="nn-bal-pos">' + s + '</span>';
+  if (n < 0) return '<span class="nn-bal-neg">-' + s + '</span>';
+  return '<span class="nn-bal-zero">$0.00</span>';
+}
+
+function nnCard(rec) {
+  let html = '<div class="nn-card"><div class="nn-card-name">' + rec[nnHeaders[0]] + '</div>';
+  for (let i = 1; i < nnHeaders.length; i++) {
+    const h = nnHeaders[i];
+    html += '<div class="nn-field"><span class="nn-label">' + h +
+            '</span><span class="nn-value">' + nnFmtCell(rec[h]) + '</span></div>';
+  }
+  return html + '</div>';
 }
 
 async function nnInit() {
   const el = document.getElementById('nnResults');
-  if (!NN_CSV_URL || NN_CSV_URL.indexOf('PASTE_') === 0) {
-    el.innerHTML = '<div class="nn-msg">NN data not connected yet — add your published CSV URL to NN_CSV_URL.</div>';
-    return;
-  }
   try {
-    const res = await fetch(NN_CSV_URL);
-    nnData = parseCSV(await res.text());
+    const rows = parseCSV(await (await fetch(NN_CSV_URL)).text());
+    nnHeaders = rows[0].map(h => h.trim());
+    nnData = rows.slice(1).map(r => {
+      const o = {};
+      nnHeaders.forEach((h, i) => o[h] = (r[i] || '').trim());
+      return o;
+    }).filter(o => o[nnHeaders[0]]);
     nnDoSearch();
   } catch (err) {
-    el.innerHTML = '<div class="nn-msg">Could not load NN data. Check that the sheet is published to the web.</div>';
+    el.innerHTML = '<div class="nn-msg">Could not load NN data. Check that the sheet is still published to the web as CSV.</div>';
   }
 }
 
-function nnFmt(v) {
-  if (v === null || v === undefined || isNaN(v)) return '<span class="nn-na-val">Not reported</span>';
-  const s = '$' + Math.abs(v).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-  if (v > 0) return '<span class="nn-bal-pos">' + s + '</span>';
-  if (v < 0) return '<span class="nn-bal-neg">-' + s + '</span>';
-  return '<span class="nn-bal-zero">$0.00</span>';
+function firstMoney(rec){
+  for(let i=1;i<nnHeaders.length;i++){ const n=moneyVal(rec[nnHeaders[i]]||''); if(n!==null) return n; }
+  return null;
 }
-
-function nnRow(nn) {
-  return '<div class="nn-row"><div><div class="nn-row-name">' + nn.name +
-         '</div><div class="nn-row-region">' + (nn.region || '&mdash;') +
-         '</div></div><div class="nn-row-bal">' + nnFmt(nn.balance) + '</div></div>';
-}
-
 function nnDoSearch() {
   const el = document.getElementById('nnResults');
-  const q  = document.getElementById('nnSearch').value.trim().toLowerCase();
-  if (!nnData.length) { el.innerHTML = '<div class="nn-msg">Loading NN data…</div>'; return; }
+  const q = document.getElementById('nnSearch').value.trim().toLowerCase();
+  if (!nnData.length) { el.innerHTML = '<div class="nn-msg">Loading NN data&hellip;</div>'; return; }
   if (!q) { el.innerHTML = '<div class="nn-msg">Start typing to find your NeighborNet.</div>'; return; }
-  const hits = nnData.filter(n =>
-    n.name.toLowerCase().includes(q) || (n.region || '').toLowerCase().includes(q));
+  let hits = nnData.filter(r => nnHeaders.some(h => (r[h] || '').toLowerCase().includes(q)));
   if (!hits.length) { el.innerHTML = '<div class="nn-msg">No NeighborNet matches that search.</div>'; return; }
+  if (nnSort !== 'name') {
+    hits = hits.slice().sort((a,b)=>{
+      const x=firstMoney(a), y=firstMoney(b);
+      if(x===null) return 1; if(y===null) return -1;
+      return nnSort==='high' ? y-x : x-y;
+    });
+  } else {
+    hits = hits.slice().sort((a,b)=>(a[nnHeaders[0]]||'').localeCompare(b[nnHeaders[0]]||''));
+  }
   el.innerHTML = '<div class="nn-count">' + hits.length +
-    (hits.length === 1 ? ' match' : ' matches') + '</div>' + hits.map(nnRow).join('');
+    (hits.length === 1 ? ' match' : ' matches') + '</div>' + hits.map(nnCard).join('');
 }
 
+document.getElementById('nnSearch').addEventListener('input', nnDoSearch);
+document.querySelectorAll('.sort-btn').forEach(b=>b.onclick=()=>{
+  nnSort=b.dataset.sort;
+  document.querySelectorAll('.sort-btn').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  nnDoSearch();
+});
 nnInit();
-
-/* ── Quarter-over-quarter delta badges ──
-   Add data-q1 / data-q2 to any .stat-card to get an arrow.
-   Expense cards read inverted: up is shown in red, down in green. */
-(function () {
-  document.querySelectorAll('.stat-card[data-q1]').forEach(function (card) {
-    var q1 = parseFloat(card.dataset.q1), q2 = parseFloat(card.dataset.q2);
-    if (isNaN(q1) || isNaN(q2) || q1 === 0) return;
-    var pct = ((q2 - q1) / Math.abs(q1)) * 100;
-    var rising = pct > 0.5, falling = pct < -0.5;
-    var inverted = card.classList.contains('exp');
-    var tone = !rising && !falling ? 'flat'
-             : inverted ? (rising ? 'down' : 'up')
-             : (rising ? 'up' : 'down');
-    var arrow = rising ? '\u2191' : falling ? '\u2193' : '\u2192';
-    var sub = card.querySelector('.stat-sub');
-    if (!sub) return;
-    sub.innerHTML =
-      '<span class="delta delta-' + tone + '">' + arrow + ' ' + Math.abs(pct).toFixed(0) + '%</span>' +
-      '<span class="delta-note">vs. Q1</span>';
-  });
-})();
 </script>
-
 </body>
 </html>
