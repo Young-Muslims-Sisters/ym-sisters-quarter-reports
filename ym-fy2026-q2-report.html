@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Boldonse&family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════════════════════════
-   YOUNG MUSLIMS · SISTERS  —  Q2 FY2026 Finance Report
+   YOUNG MUSLIMS · SISTERS  -  Q2 FY2026 Finance Report
    Palette  : Sisters (brandbook p.32) + General (p.30)
    Type     : Boldonse display (caps only) · Figtree everything
    Imagery  : organic frames · mono grain · desaturation (p.41)
@@ -30,7 +30,7 @@
   --ink-3:rgba(23,23,37,.50);
   --rule:rgba(4,50,34,.12);
 
-  /* functional only — not brand colour */
+  /* functional only - not brand colour */
   --alert:#A8321F;
 
   --ym-noise:url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='140'%20height='140'%3E%3Cfilter%20id='n'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.5'%20numOctaves='3'%20stitchTiles='stitch'/%3E%3CfeColorMatrix%20type='saturate'%20values='0'/%3E%3C/filter%3E%3Crect%20width='140'%20height='140'%20filter='url(%23n)'/%3E%3C/svg%3E");
@@ -122,7 +122,7 @@ h2{font-weight:700}h3{font-weight:700}h4{font-weight:600}
 }
 .chip b{color:var(--buttercup);font-weight:700}
 
-/* photo mosaic — organic frames, no two alike */
+/* photo mosaic - organic frames, no two alike */
 .mosaic{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:auto auto;gap:clamp(12px,1.6vw,20px)}
 .mosaic .ym-img{box-shadow:0 18px 44px rgba(2,20,14,.42);transition:transform .55s var(--ease)}
 .mosaic .ym-img:hover{transform:translateY(-6px) scale(1.02);z-index:2}
@@ -268,6 +268,14 @@ figure.shot figcaption{font-size:12.5px;font-weight:500;color:var(--jade);margin
 }
 .evt:hover{transform:translateY(-4px);box-shadow:var(--s2)}
 .evt:nth-child(even){border-radius:var(--organic-alt);border-top-color:var(--brass)}
+@media(min-width:1000px){
+  .cards{grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+  .evt{padding:22px 16px}
+  .cards .trio{grid-template-columns:repeat(auto-fit,minmax(68px,1fr));gap:7px}
+  .cards .cell{padding:12px 4px}
+  .cards .cell b{font-size:20px}
+  .cards .cell span{font-size:9px;letter-spacing:.07em}
+}
 .tag{display:inline-block;font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
   padding:5px 14px;border-radius:99px;background:var(--forest);color:var(--buttercup);align-self:flex-start}
 .evt h3{font-size:19px;color:var(--forest);margin:14px 0 8px}
@@ -313,7 +321,7 @@ figure.shot figcaption{font-size:12.5px;font-weight:500;color:var(--jade);margin
 .quote cite{display:block;margin-top:14px;font-style:normal;font-size:12px;font-weight:600;
   letter-spacing:.12em;text-transform:uppercase;color:var(--jade)}
 .band--dark .quote cite{color:var(--brass)}
-/* A white card inside a dark band is still a LIGHT surface —
+/* A white card inside a dark band is still a LIGHT surface -
    restore light-section colours for anything nested inside it,
    otherwise the dark-band rules render white text on white. */
 .band--dark .evt .quote,
@@ -334,7 +342,7 @@ figure.shot figcaption{font-size:12.5px;font-weight:500;color:var(--jade);margin
 .note.jade{background:var(--jade-10);border:1px solid var(--jade-24);color:var(--forest)}
 .note.brass{background:var(--brass-14);border:1px solid var(--brass-28);color:var(--forest)}
 .note.butter{background:var(--butter-18);border:1px solid var(--butter-38);color:var(--forest)}
-/* On dark bands a tint goes murky — use the solid Buttercup + Deep Forest
+/* On dark bands a tint goes murky - use the solid Buttercup + Deep Forest
    treatment instead (brandbook p.27) so contrast holds. */
 .band--dark .note.butter{background:var(--buttercup);border-color:var(--buttercup);color:var(--forest)}
 .band--dark .note.butter a{color:var(--forest);font-weight:700}
@@ -622,7 +630,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     <div class="sec-head rv">
       <div class="eyebrow">Section 02</div>
       <h2 class="display">Q2 at a Glance</h2>
-      <div class="sub">Headline numbers for the quarter &mdash; arrows compare against Q1 FY26</div>
+      <div class="sub">Headline numbers for the quarter - arrows compare against Q1 FY26</div>
       <div class="rule"></div>
     </div>
 
@@ -664,12 +672,9 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 <div class="note jade rv" style="margin-top:26px">
   <strong>What's driving the change?</strong> The increase in expenses is largely due to YMC and YMLC-related costs hitting this quarter, including expenses paid ahead of YMLC taking place the following quarter. On the income side, Q1 naturally runs higher because it includes Ramadan, our biggest fundraising season, which explains both the 92% drop in fundraising and the overall decrease in income. While YMC, YMLC, and NER still brought in significant income this quarter, it didn't match the volume raised during Ramadan.
 </div>
-    <div class="note jade rv" style="margin-top:26px">
-      <strong>Reading the arrows:</strong> deltas compare against Q1 FY26 (Jan&ndash;Mar 2026). Two need context &mdash; <strong>fundraising</strong> fell because Q1 contained Ramadan, our single largest fundraising window of the year; and <strong>expenses</strong> rose largely on YMLC deposits and YMC pass-throughs, which are collected from attendees and paid back out rather than being true program cost.
-    </div>
 
     <div class="quote rv">
-      <p>&ldquo;This quarter carried so much energy. It wasn't just finances &mdash; it was hours, time, and effort spent putting something together for hundreds of attendees. Whether it was YMC, YMLC, or Muslim Advocacy Day, everyone had the chance to be part of something, alhamdulillah.&rdquo;</p>
+      <p>&ldquo;This quarter carried so much energy. It wasn't just finances - it was hours, time, and effort spent putting something together for hundreds of attendees. Whether it was YMC, YMLC, or Muslim Advocacy Day, everyone had the chance to be part of something, alhamdulillah.&rdquo;</p>
       <cite>Aisha Abouganba &middot; National Finance Department Lead (CFO)</cite>
     </div>
   </div>
@@ -681,9 +686,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     <div class="sec-head rv">
       <div class="eyebrow">Section 03</div>
       <h2 class="display">2026 So Far</h2>
-      <div class="sub">January &ndash; June 2026 &mdash; tap any row to see what's inside it</div>
-      <div class="rule"></div>
-      <div class="rv" style="display:flex;align-items:center;gap:14px;margin-top:22px;flex-wrap:wrap">
+      <div class="rv" style="display:flex;align-items:center;gap:14px;margin-bottom:22px;flex-wrap:wrap">
   <div style="display:flex;gap:4px">
     <span style="width:52px;height:9px;border-radius:99px;background:var(--forest)"></span>
     <span style="width:52px;height:9px;border-radius:99px;background:var(--forest)"></span>
@@ -694,6 +697,8 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     Q1 &amp; Q2 complete &middot; half of FY2026
   </span>
 </div>
+      <div class="sub">Let's zoom out and look at our progress so far this year from January to June. Tap on any row to see what makes up each category!</div>
+      <div class="rule"></div>
     </div>
 
     <div class="flow-head rv">
@@ -709,12 +714,6 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 
     <div class="bars rv" id="flowPanel" role="tabpanel"></div>
 
-    <div class="note jade rv">
-      <strong>Net result: a $40,437.72 surplus.</strong> $228,584.77 came in against $188,147.05 going out.
-      Two conferences &mdash; YMLC and YMC &mdash; account for <strong>76.5%</strong> of everything spent, and giving
-      (donations plus the ICNA Sisters gift) makes up <strong>63.8%</strong> of everything raised.
-    </div>
-
     <h3 class="rv" style="margin:46px 0 16px;font-size:20px;color:var(--forest)">Full category ledger</h3>
     <div class="tbl-wrap rv">
       <table>
@@ -722,14 +721,14 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
         <tbody>
           <tr><td>Donations</td><td><span class="badge in">Revenue</span></td><td class="num">$115,911.90</td><td class="num">50.7%</td></tr>
           <tr><td>YMLC Registration</td><td><span class="badge in">Revenue</span></td><td class="num">$41,588.20</td><td class="num">18.2%</td></tr>
-          <tr><td>Conferences &mdash; Income</td><td><span class="badge in">Revenue</span></td><td class="num">$34,309.66</td><td class="num">15.0%</td></tr>
+          <tr><td>YMC Registration</td><td><span class="badge in">Revenue</span></td><td class="num">$34,309.66</td><td class="num">15.0%</td></tr>
           <tr><td>ICNA Sisters Gift</td><td><span class="badge in">Revenue</span></td><td class="num">$30,000.00</td><td class="num">13.1%</td></tr>
-          <tr><td>Event Registration</td><td><span class="badge in">Revenue</span></td><td class="num">$2,819.23</td><td class="num">1.2%</td></tr>
-          <tr><td>Retreats</td><td><span class="badge in">Revenue</span></td><td class="num">$2,132.99</td><td class="num">0.9%</td></tr>
-          <tr><td>Merchandise</td><td><span class="badge in">Revenue</span></td><td class="num">$1,822.79</td><td class="num">0.8%</td></tr>
+          <tr><td>Local Events Registration</td><td><span class="badge in">Revenue</span></td><td class="num">$2,819.23</td><td class="num">1.2%</td></tr>
+          <tr><td>Retreats Registration</td><td><span class="badge in">Revenue</span></td><td class="num">$2,132.99</td><td class="num">0.9%</td></tr>
+          <tr><td>Merchandise Revenue</td><td><span class="badge in">Revenue</span></td><td class="num">$1,822.79</td><td class="num">0.8%</td></tr>
           <tr class="total"><td>Total Revenue</td><td></td><td class="num">$228,584.77</td><td class="num">100%</td></tr>
           <tr><td>YM Leadership Conference (YMLC)</td><td><span class="badge out">Expense</span></td><td class="num">$97,296.38</td><td class="num">51.7%</td></tr>
-          <tr><td>Conferences &mdash; Expenses</td><td><span class="badge out">Expense</span></td><td class="num">$46,569.92</td><td class="num">24.8%</td></tr>
+          <tr><td>Conferences - Expenses</td><td><span class="badge out">Expense</span></td><td class="num">$46,569.92</td><td class="num">24.8%</td></tr>
           <tr><td>NN Operations</td><td><span class="badge out">Expense</span></td><td class="num">$14,720.07</td><td class="num">7.8%</td></tr>
           <tr><td>Merchandise, Software &amp; Subscriptions</td><td><span class="badge out">Expense</span></td><td class="num">$12,799.78</td><td class="num">6.8%</td></tr>
           <tr><td>Sub-Regional Operations</td><td><span class="badge out">Expense</span></td><td class="num">$11,683.54</td><td class="num">6.2%</td></tr>
@@ -740,10 +739,6 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
         </tbody>
       </table>
     </div>
-
-    <div class="note brass rv">
-      <strong>A note on pass-throughs.</strong> Conference amounts are collected from attendees and paid back out for hotels, buses, and venues. They are labeled separately so they don't inflate perceived program cost.
-    </div>
   </div>
 </section>
 
@@ -753,37 +748,39 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     <div class="sec-head rv">
       <div class="eyebrow">Section 04</div>
       <h2 class="display">Q2 National Initiatives</h2>
-      <div class="sub">YMC &middot; YMLC &middot; MAD &middot; YM Gives</div>
+      <div class="sub">This quarter is set to be the most active of the year at the national level.</div>
       <div class="rule"></div>
     </div>
 
     <div class="cards rv">
       <article class="evt">
         <span class="tag">YMC</span>
-        <h3>YM Conference &mdash; Baltimore</h3>
-        <p>A weekend of tarbiyyah, connection, and community with sisters from across the country.</p>
-        <div class="money-line"><span class="k">Registration Income</span><span class="v tabular">$33,609.66</span></div>
-        <div class="money-line" style="margin-top:0"><span class="k">Total Expenses</span><span class="v tabular">$41,472.40</span></div>
+        <h3>YM Conference -<br>Baltimore</h3>
+        <p>A weekend of tarbiyyah and suhbah with sisters from across the country.</p>
+        <div class="trio" style="grid-template-columns:1fr">
+          <div class="cell"><b>$33,609.66</b><span>Registration Income</span></div>
+          <div class="cell"><b>$41,472.40</b><span>Total Expenses</span></div>
+        </div>
       </article>
 
       <article class="evt">
         <span class="tag">YMLC</span>
-        <h3>YM Leadership Conference &mdash; Florida</h3>
-        <p>A summer intensive built to sharpen the sisters who lead our NeighborNets.</p>
+        <h3>YM Leadership Conference - Florida</h3>
+        <p>A weekend of leadership training, suhbah, and unforgettable memories.</p>
         <div class="trio">
           <div class="cell"><b data-count="300">300</b><span>Attendees</span></div>
           <div class="cell"><b data-count="14">14</b><span>Sessions</span></div>
           <div class="cell"><b data-count="25">25</b><span>Speakers</span></div>
         </div>
-        <div class="money-line"><span class="k">Paid in Q2 (deposits &amp; travel)</span><span class="v tabular">$100,196.38</span></div>
-        <p class="foot-note">YMLC takes place in Q3, but its deposits and major payments landed in Q2 &mdash; so the cost shows up in this quarter's numbers.</p>
-      </article>
+        <div class="trio" style="margin-top:9px;grid-template-columns:1fr">
+          <div class="cell"><b>$100,196.38</b><span>Q2 Total Expenses</span></div>
+        </div>      </article>
 
       <article class="evt">
         <span class="tag">MAD</span>
-        <h3>Muslim Advocacy Day &mdash; Washington, D.C.</h3>
+        <h3>Muslim Advocacy Day - Washington, D.C.</h3>
         <p>Sisters on Capitol Hill, speaking directly to the people who write the policy.</p>
-        <div class="trio">
+        <div class="trio" style="grid-template-columns:1fr">
           <div class="cell"><b data-count="90">90</b><span>Attendees</span></div>
           <div class="cell"><b data-count="18">18</b><span>States Represented</span></div>
         </div>
@@ -791,18 +788,18 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 
       <article class="evt">
         <span class="tag">YM Gives</span>
-        <h3>National Service Campaign</h3>
-        <p>One campaign, NeighborNets everywhere, neighbors served on their own blocks.</p>
+        <h3>National Service<br>Campaign</h3>
+        <p>One campaign, NeighborNets everywhere.</p>
         <div class="trio">
           <div class="cell"><b data-count="75">75</b><span>NNs Participating</span></div>
         </div>
       </article>
     </div>
 
-    <h3 class="rv" style="margin:46px 0 18px;font-size:20px;color:var(--forest)">Sisterhood in action</h3>
+    <h3 class="rv" style="margin:46px 0 18px;font-size:20px;color:var(--forest)">Initiatives in action</h3>
     <div class="gallery g2 rv">
-      <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-21.26.22-scaled.jpeg" alt="Muslim Advocacy Day in Washington, D.C."></span><figcaption>MAD &middot; Washington, D.C.</figcaption></figure>
-      <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-21.31.41-scaled.jpeg" alt="YM Gives service day with the Prosper and Frisco NeighborNets"></span><figcaption>YM Gives &middot; Prosper &amp; Frisco NNs</figcaption></figure>
+      <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-21.26.22-scaled.jpeg" alt="Muslim Advocacy Day in Washington, D.C."></span><figcaption>Muslim Advocacy Day &middot; Washington, D.C.</figcaption></figure>
+      <figure class="shot"><span class="ym-img zoom"><img src="https://ymsisters.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-17-at-21.31.41-scaled.jpeg" alt="YM Gives service day with the Prosper and Frisco NeighborNets"></span><figcaption>YM Gives &middot; YM Prosper &amp; Frisco Masjid Gardening</figcaption></figure>
     </div>
   </div>
 </section>
@@ -838,13 +835,13 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     </div>
 
     <div class="note jade rv">
-      <strong>Read this as shared load.</strong> Just over half of every aid dollar came from SR and NN budgets rather than National &mdash; NeighborNets funding their own sisters into the room. Total approved: <strong>$9,990.00</strong>.
+      <strong>Read this as shared load.</strong> Just over half of every aid dollar came from SR and NN budgets rather than National - NeighborNets funding their own sisters into the room. Total approved: <strong>$9,990.00</strong>.
     </div>
 
     <div class="spot rv">
       <span class="mk">&#10022;</span>
       <h3>What financial aid unlocks</h3>
-      <p>Aid lets our leaders reach opportunities that deepen their faith and sharpen their leadership &mdash; <strong>YMLC</strong>, <strong>YMC</strong>, <strong>Muslim Advocacy Day</strong>, Arabic and Islamic studies intensives, and more. Every dollar here is a sister in a room she otherwise could not be in.</p>
+      <p>Aid lets our leaders reach opportunities that deepen their faith and sharpen their leadership - <strong>YMLC</strong>, <strong>YMC</strong>, <strong>Muslim Advocacy Day</strong>, Arabic and Islamic studies intensives, and more. Every dollar here is a sister in a room she otherwise could not be in.</p>
     </div>
   </div>
 </section>
@@ -860,9 +857,9 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     </div>
 
     <div class="rv on-light" style="background:#fff;border-radius:var(--organic);padding:34px 36px;color:var(--ink)">
-      <div class="eyebrow" style="color:var(--jade)">NN Spotlight &mdash; Portland, Maine</div>
+      <div class="eyebrow" style="color:var(--jade)">NN Spotlight - Portland, Maine</div>
       <h3 class="display" style="font-size:clamp(24px,3.4vw,36px);color:var(--forest);margin:16px 0 14px">Portland NeighborNet wins a $45,000 grant</h3>
-      <p style="font-size:16px;color:var(--ink-2);line-height:1.7;max-width:66ch">Portland, Maine applied for outside grant funding &mdash; and got it. The award is <strong style="color:var(--forest)">$45,000 total, paid out at $15,000 a year</strong>, giving the chapter three years of programming money that didn't come from dues, bake sales, or National.</p>
+      <p style="font-size:16px;color:var(--ink-2);line-height:1.7;max-width:66ch">Portland, Maine applied for outside grant funding - and got it. The award is <strong style="color:var(--forest)">$45,000 total, paid out at $15,000 a year</strong>, giving the chapter three years of programming money that didn't come from dues, bake sales, or National.</p>
       <div class="trio" style="grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:22px">
         <div class="cell"><b data-count="45000" data-money="1" data-dp="0">$45,000</b><span>Total Grant Awarded</span></div>
         <div class="cell"><b data-count="15000" data-money="1" data-dp="0">$15,000</b><span>Paid Out Yearly</span></div>
@@ -875,10 +872,10 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     </div>
 
     <div class="note butter rv" style="color:var(--forest)">
-      <strong>Your NN can do this too.</strong> Grant money is genuinely available to NeighborNets like ours &mdash; state programs, community foundations, and local youth funds all give to groups our size. Portland applied under YM National's <strong>501(c)(3)</strong>, which every NeighborNet can do. If your chapter wants to try, email <a href="mailto:finance@ymsisters.com" style="color:var(--forest)">finance@ymsisters.com</a> and we'll help you find opportunities and get the paperwork right. Even if you think your NN doesn't need the money, it can always be of benefit to the org.
+      <strong>Your NN can do this too.</strong> Grant money is genuinely available to NeighborNets like ours - state programs, community foundations, and local youth funds all give to groups our size. Portland applied under YM National's <strong>501(c)(3)</strong>, which every NeighborNet can do. If your chapter wants to try, email <a href="mailto:finance@ymsisters.com" style="color:var(--forest)">finance@ymsisters.com</a> and we'll help you find opportunities and get the paperwork right. Even if you think your NN doesn't need the money, it can always be of benefit to the org.
     </div>
 
-    <h3 class="display rv" style="font-size:clamp(22px,3vw,32px);color:#fff;margin:56px 0 8px">NS Tours &mdash; National Shura visits</h3>
+    <h3 class="display rv" style="font-size:clamp(22px,3vw,32px);color:#fff;margin:56px 0 8px">NS Tours - National Shura visits</h3>
     <p class="rv" style="color:rgba(255,255,255,.7);margin-bottom:26px">Connecting with local leadership</p>
 
     <div class="cards rv" style="grid-template-columns:1fr">
@@ -918,7 +915,7 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     </div>
 
     <div class="note butter rv">
-      <strong>The NN Finance Handbook is here! &#127881;</strong> We're excited to announce the release of the <strong>NN Finance Handbook</strong> &mdash; your complete guide to accounts, JotForm submission types, dashboards, approvals, lump sums, audits, and a full worked case study. <a href="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" target="_blank" rel="noopener">Read it here &rarr;</a>
+      <strong>The NN Finance Handbook is here! &#127881;</strong> We're excited to announce the release of the <strong>NN Finance Handbook</strong> - your complete guide to accounts, JotForm submission types, dashboards, approvals, lump sums, audits, and a full worked case study. <a href="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" target="_blank" rel="noopener">Read it here &rarr;</a>
     </div>
 
     <h3 class="rv" style="margin:40px 0 18px;font-size:20px;color:var(--forest)">Friendly policy reminders</h3>
@@ -927,23 +924,23 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
         <div class="acc-p"><div class="acc-p-in">Prefer <strong>Zelle over Venmo</strong> when possible. Coordinate Zelle details with <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a> after submitting the JotForm.</div></div></div>
 
       <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">2</span><span class="acc-t">No personal expenses on the same receipt as YM expenses</span><span class="pill strict">Strict</span><span class="acc-x">+</span></button>
-        <div class="acc-p"><div class="acc-p-in">Mixed receipts <strong>will be denied</strong> &mdash; we are strict on this. Make YM purchases on their own receipt.</div></div></div>
+        <div class="acc-p"><div class="acc-p-in">Mixed receipts <strong>will be denied</strong> - we are strict on this. Make YM purchases on their own receipt.</div></div></div>
 
       <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">3</span><span class="acc-t">Proper event names in Expense Details are required</span><span class="acc-x">+</span></button>
-        <div class="acc-p"><div class="acc-p-in">Format: <strong>Date &middot; Event Name &middot; Subcategory</strong> (e.g., <em>1/9/26 NJ Gala &ndash; Decorations</em>). Some NNs are omitting event names and being contacted individually &mdash; save everyone the back-and-forth by labeling correctly the first time.</div></div></div>
+        <div class="acc-p"><div class="acc-p-in">Format: <strong>Date &middot; Event Name &middot; Subcategory</strong> (e.g., <em>1/9/26 NJ Gala &ndash; Decorations</em>). Some NNs are omitting event names and being contacted individually - save everyone the back-and-forth by labeling correctly the first time.</div></div></div>
 
       <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">4</span><span class="acc-t">NN collab confusion, cleared up</span><span class="acc-x">+</span></button>
-        <div class="acc-p"><div class="acc-p-in">When two NNs split costs, up to <strong>3 JotForms</strong> are needed &mdash; (&#9312;) the payer's reimbursement expense, (&#9313;) the other NN's expense for sending their share, (&#9314;) the receiving NN's income. See Handbook &sect;05b for the full worked example.</div></div></div>
+        <div class="acc-p"><div class="acc-p-in">When two NNs split costs, up to <strong>3 JotForms</strong> are needed - (&#9312;) the payer's reimbursement expense, (&#9313;) the other NN's expense for sending their share, (&#9314;) the receiving NN's income. See Handbook &sect;05b for the full worked example.</div></div></div>
 
       <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">5</span><span class="acc-t">Submit separate JotForms for each event</span><span class="acc-x">+</span></button>
         <div class="acc-p"><div class="acc-p-in">We don't want multiple events' expenses combined into one JotForm. If you paid for or attended more than one event, submit a <strong>separate JotForm for each event</strong> so we can track and approve them individually.</div></div></div>
 
       <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">6</span><span class="acc-t">Also worth remembering</span><span class="acc-x">+</span></button>
-        <div class="acc-p"><div class="acc-p-in"><ul><li>Receipt format: <strong>PDFs, not screenshots</strong>, for online orders.</li><li>As always &mdash; <strong>no receipt, no approval.</strong></li></ul></div></div></div>
+        <div class="acc-p"><div class="acc-p-in"><ul><li>Receipt format: <strong>PDFs, not screenshots</strong>, for online orders.</li><li>As always - <strong>no receipt, no approval.</strong></li></ul></div></div></div>
     </div>
 
-    <h3 class="rv" style="margin:48px 0 8px;font-size:20px;color:var(--forest)">Quick check &mdash; do you know the rules?</h3>
-    <p class="rv" style="color:var(--ink-2);margin-bottom:20px">Four questions. No score kept, no one's watching &mdash; just a fast way to see if anything above is worth a second read.</p>
+    <h3 class="rv" style="margin:48px 0 8px;font-size:20px;color:var(--forest)">Quick check - do you know the rules?</h3>
+    <p class="rv" style="color:var(--ink-2);margin-bottom:20px">Four questions. No score kept, no one's watching - just a fast way to see if anything above is worth a second read.</p>
     <div class="quiz rv" id="quiz"></div>
   </div>
 </section>
@@ -978,13 +975,13 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 <section class="band" id="closing">
   <div class="shell">
     <div class="sec-head rv">
-      <div class="eyebrow">Section 08</div>
+      <div class="eyebrow">Closing</div>
       <h2 class="display">Jazakumullahu khairan</h2>
       <div class="sub">Thank you for a quarter of careful, quiet work</div>
       <div class="rule"></div>
     </div>
     <div class="letter rv">
-      <p>Thank you to every NNC, SRC, SR Finance Lead, and National Shura member who submitted, approved, and tracked finances this quarter &mdash; your diligence keeps YM transparent and trustworthy with every dollar entrusted to us. May Allah &#xFDFB; accept our efforts and multiply the barakah in our NeighborNets and communities.</p>
+      <p>Thank you to every NNC, SRC, SR Finance Lead, and National Shura member who submitted, approved, and tracked finances this quarter - your diligence keeps YM transparent and trustworthy with every dollar entrusted to us. May Allah &#xFDFB; accept our efforts and multiply the barakah in our NeighborNets and communities.</p>
       <p>Questions about anything in this report? Reach out anytime at <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a>.</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:26px">
         <button class="btn" onclick="window.print()">Save as PDF</button>
@@ -996,7 +993,6 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
 
 <footer>
   <div class="shell">
-    <div class="ar" lang="ar">&#xFDFD; &nbsp; &#xFDFA;</div>
     <div>Young Muslims &middot; Finance Department &middot; <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a></div>
     <div class="fine">Q2 FY2026 National Finance Report &middot; For Internal Use Only</div>
   </div>
@@ -1064,18 +1060,18 @@ document.querySelectorAll('.stat[data-q1]').forEach(card=>{
 /* ══════════ MONEY FLOW EXPLORER ══════════ */
 const FLOW={
   in:{key:'Revenue by category',total:'$228,584.77',rows:[
-    {n:'Donations',a:'$115,911.90',p:50.7,note:'Every giving channel combined \u2014 website, Square, Zelle, LaunchGood, Venmo, cash and check, plus NN and SR giving. The single largest source of YM revenue.'},
+    {n:'Donations',a:'$115,911.90',p:50.7,note:'Every giving channel combined - website, Square, Zelle, LaunchGood, Venmo, cash and check, plus NN and SR giving. The single largest source of YM revenue.'},
     {n:'YMLC Registration',a:'$41,588.20',p:18.2,note:'Registrations for the summer Leadership Conference. Collected ahead of the event, which runs in Q3.'},
-    {n:'Conferences \u2014 Income',a:'$34,309.66',p:15.0,note:'YMC Baltimore registration, booth, and transport, plus YMC West in California. Much of this is collected from attendees and paid straight back out.'},
-    {n:'ICNA Sisters Gift',a:'$30,000.00',p:13.1,note:'A single institutional gift from ICNA Sisters \u2014 13% of all revenue from one source.'},
-    {n:'Event Registration',a:'$2,819.23',p:1.2,note:'Local NN and SR event registrations outside the national conferences.'},
-    {n:'Retreats',a:'$2,132.99',p:0.9,note:'Northeast Retreat registrations.'},
-    {n:'Merchandise',a:'$1,822.79',p:0.8,note:'Merch sales across national, SR, and NN channels.'}]},
+    {n:'YMC Registration',a:'$34,309.66',p:15.0,note:'YMC Baltimore registration, booth, and transport, plus YMC West in California. Much of this is collected from attendees and paid straight back out.'},
+    {n:'ICNA Sisters Gift',a:'$30,000.00',p:13.1,note:'A single institutional gift from ICNA Sisters.'},
+    {n:'Local Events Registration',a:'$2,819.23',p:1.2,note:'Local NN and SR event registrations outside the national conferences.'},
+    {n:'Retreats Registration',a:'$2,132.99',p:0.9,note:'Northeast Retreat registrations.'},
+    {n:'Merchandise Revenue',a:'$1,822.79',p:0.8,note:'Merch sales across national, SR, and NN channels.'}]},
   out:{key:'Expenditures by category',total:'$188,147.05',rows:[
-    {n:'YM Leadership Conference (YMLC)',a:'$97,296.38',p:51.7,note:'Hotel, transport, and programs. YMLC runs in Q3, but deposits and major payments landed in the first half \u2014 so the cost sits here.'},
-    {n:'Conferences \u2014 Expenses',a:'$46,569.92',p:24.8,note:'YMC Baltimore (hotels, transport, registration, logistics) plus YMC SouthEast in Atlanta. Largely pass-through against conference income.'},
+    {n:'YM Leadership Conference (YMLC)',a:'$97,296.38',p:51.7,note:'Hotel, transport, and programs. YMLC runs in Q3, but deposits and major payments landed in the first half - so the cost sits here.'},
+    {n:'Conferences - Expenses',a:'$46,569.92',p:24.8,note:'YMC Baltimore (hotels, transport, registration, logistics) plus YMC SouthEast in Atlanta. Largely pass-through against conference income.'},
     {n:'NN Operations',a:'$14,720.07',p:7.8,note:'Day-to-day chapter running costs, fundraising and outreach, expansion NNs, and IT support funds.'},
-    {n:'Merchandise, Software &amp; Subscriptions',a:'$12,799.78',p:6.8,note:'Merch production and design, plus the tools the organization runs on \u2014 website, Adobe, Mailchimp, Zoom.'},
+    {n:'Merchandise, Software &amp; Subscriptions',a:'$12,799.78',p:6.8,note:'Merch production and design, plus the tools the organization runs on - website, Adobe, Mailchimp, Zoom.'},
     {n:'Sub-Regional Operations',a:'$11,683.54',p:6.2,note:'Eleven subregions, from Chicago to Virginia. New Jersey Central is the largest single line at $4,243.14.'},
     {n:'Retreats, National Ops &amp; Partnerships',a:'$8,143.78',p:4.3,note:'Northeast Retreat, National Shura travel, the SRC Retreat, and sponsorships.'},
     {n:'Financial Aid',a:'$430.00',p:0.2,note:'Aid recorded against the National Financial Aid expense line in this statement.'},
@@ -1136,17 +1132,17 @@ document.querySelectorAll('.acc-btn').forEach(btn=>{
 /* ══════════ POLICY SELF-CHECK ══════════ */
 const QS=[
  {q:'You bought decorations for the NJ Gala and grabbed a coffee on the same receipt. What happens?',
-  o:['It gets approved \u2014 the coffee is small','It gets denied \u2014 mixed receipts are not accepted','It gets approved if you highlight the YM lines'],
-  a:1,f:'Mixed receipts will be denied. Make YM purchases on their own receipt \u2014 finance is strict on this one.'},
+  o:['It gets approved - the coffee is small','It gets denied - mixed receipts are not accepted','It gets approved if you highlight the YM lines'],
+  a:1,f:'Mixed receipts will be denied. Make YM purchases on their own receipt - finance is strict on this one.'},
  {q:'How should an expense be labeled in Expense Details?',
   o:['Just the amount and the date','Event Name only','Date \u00b7 Event Name \u00b7 Subcategory'],
-  a:2,f:'Format is Date \u00b7 Event Name \u00b7 Subcategory \u2014 e.g. 1/9/26 NJ Gala \u2013 Decorations. Missing event names mean someone has to chase you individually.'},
+  a:2,f:'Format is Date \u00b7 Event Name \u00b7 Subcategory - e.g. 1/9/26 NJ Gala \u2013 Decorations. Missing event names mean someone has to chase you individually.'},
  {q:'You attended three separate events this month. How many JotForms?',
-  o:['One, combined','Three \u2014 one per event','Two, if the events shared a venue'],
+  o:['One, combined','Three - one per event','Two, if the events shared a venue'],
   a:1,f:'One JotForm per event, always. It lets finance track and approve each one independently.'},
  {q:'Two NNs split the cost of a joint event. How many JotForms can be involved?',
   o:['Up to three','Exactly one','Two, always'],
-  a:0,f:'Up to three \u2014 the payer\u2019s reimbursement, the other NN\u2019s expense for sending their share, and the receiving NN\u2019s income. Handbook \u00a705b has the full worked example.'}
+  a:0,f:'Up to three - the payer\u2019s reimbursement, the other NN\u2019s expense for sending their share, and the receiving NN\u2019s income. Handbook \u00a705b has the full worked example.'}
 ];
 let qi=0, answered=false;
 const quiz=document.getElementById('quiz');
@@ -1176,10 +1172,10 @@ function drawQ(){
   });
   document.getElementById('qNext').onclick=()=>{
     if(qi<QS.length-1){ qi++; drawQ(); }
-    else quiz.innerHTML='<div class="quiz-q" style="margin:0">That\u2019s all four \u2014 jazakillahu khairan.</div>'+
+    else quiz.innerHTML='<div class="quiz-q" style="margin:0">That\u2019s all four - jazakillahu khairan.</div>'+
       '<p style="color:var(--ink-2);margin-top:10px">Anything that tripped you up is covered in full in the '+
       '<a href="https://sulphia-iqbal.github.io/neighbornet-finances-handbook/" target="_blank" rel="noopener">NN Finance Handbook</a>. '+
-      'Still unsure? Email <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a> \u2014 we would rather answer early than fix it later.</p>'+
+      'Still unsure? Email <a href="mailto:finance@ymsisters.com">finance@ymsisters.com</a> - we would rather answer early than fix it later.</p>'+
       '<div class="quiz-bar"><span class="delta-note">Nothing here was recorded.</span>'+
       '<button class="btn ghost" onclick="qi=0;drawQ()">Run it again</button></div>';
   };
