@@ -1,9 +1,8 @@
-# CONTEXT FILE — YM National Finance Report · Q2 FY2026
+# CONTEXT FILE — YM Sisters National Finance Quarter Reports
 
-> **Purpose of this file:** Master context for generating the Young Muslims (YM) Q2 2026 National
-> Finance Report. Feed this file (plus the companion data files listed in §9) to Claude/an AI
-> assistant when drafting the report. Anything marked `[DATA NEEDED]` or `[TBD]` must be filled
-> in before generation, or the generator should insert a clearly-marked placeholder.
+> **Purpose of this file:** Master context for generating the Young Muslims National Finance Report. 
+> Feed this file to Claude assistant when drafting the report.
+> Anything marked `[DATA NEEDED]` or `[TBD]` must be filled in before generation, or the generator should insert a clearly-marked placeholder.
 
 ---
 
@@ -17,27 +16,27 @@
 
 ## 2. Audience & Tone
 
-- **Audience:** YM National Shura (NS), SubRegional Coordinators (SRCs), SR Finance Leads, NN Coordinators (NNCs) across 170+ chapters, and national leadership.
-- **Tone:** Professional but warm and community-oriented. Celebrate wins, be transparent about numbers, be firm-but-friendly on policy reminders. Mirror the handbook's voice: direct rules ("No Receipt = No Approval") softened with helpful explanation.
-- **Islamic framing:** Open with Bismillah (use the handbook's `bismillah.svg`). Honorifics: Allah ﷻ, the Messenger ﷺ. Appropriate du'a/gratitude framing in intro and closing is welcome; keep it natural, not decorative filler.
+- **Audience:** YM National Shura (NS), YM National Department Shuras, SubRegional Coordinators (SRCs) and their SubRegional Shuras, and NeighborNet Coordinators (NNCs) and their NeighborNet Shuras across 170+ chapters.
+- **Tone:** Professional but warm and community-oriented. Celebrate wins, be transparent about numbers, be firm-but-friendly on policy reminders. Mirror the handbook's voice: direct rules softened with helpful explanation.
+- **Islamic framing:** Open with Bismillah. Honorifics: Allah ﷻ, the Messenger ﷺ. Include intro and closing duaas
 
 ## 3. Glossary / Terminology (use consistently)
 
 | Term | Meaning |
 |---|---|
-| YM | Young Muslims (the national organization; this is the Sisters' finance report) |
+| YM | Young Muslims (the national organization) |
 | NN | NeighborNet — a local chapter |
-| SR | SubRegion — a grouping of NNs |
+| SR | SubRegion — a grouping of NNs in an area|
 | NS | National Shura — national leadership council |
-| NNC | NeighborNet Coordinator |
-| SRC | SubRegional Coordinator |
-| YMC | YM Conference — national conference, held in Baltimore |
-| YMLC | YM Leadership Conference — held in Florida this year; event occurs in Q3 but **finances hit in Q2** |
+| NNC | NeighborNet Coordinator - the amir (leader) of the NeighborNet |
+| SRC | SubRegional Coordinator - the amir (leader) of the Subregion |
+| YMC | YM Conference — national conference, main conference held in Baltimore, but there are smaller ones held in the South (TX), West (California), and Southeast (Georgia) |
+| YMLC | YM Leadership Conference - event happens in Q3 but **finances start to hit in Q2** |
 | MAD | Muslim Advocacy Day — advocacy event in Washington, D.C. |
 | YM Gives | National service campaign run across chapters |
 | JotForm | The single intake form for all income/expense/transfer submissions |
-| Dashboard | Per-NN/SR finance dashboard spreadsheets refreshed from JotForm data |
-| YM Bank | Chapter funds held at YM National (not physically with the NN) |
+| Dashboard | Per-NN/SR/National team finance dashboard spreadsheets refreshed from JotForm data |
+| YM Bank | Chapter funds that belong to an NN/SR/National Team that are held by YM National (not physically with the NN/SR/National Team) - kinda like a checking account for NNs, SRs, and National Teams|
 | Cash Box | NN's local physical cash (≤ $200 at any time) |
 | Personal Bank | NNC's personal account temporarily holding YM funds |
 
@@ -58,16 +57,16 @@ Quotes from National Shura members and event photos from NNs should be interleav
 
 ## 5. Section-by-Section Content Requirements
 
-### 5.1 Q2 at a Glance
+### 5.1 QX at a Glance
 Hero stat cards in handbook card style. Include:
 - Total income `[DATA NEEDED]`
 - Total expenses `[DATA NEEDED]`
 - Net change `[DATA NEEDED]`
-- **Number of JotForm submissions in Q2** `[DATA NEEDED]` (+ % approved vs. denied if available)
+- **Number of JotForm submissions in QX** `[DATA NEEDED]` (+ % approved vs. denied if available)
 - Number of active NNs submitting `[DATA NEEDED]` / 170+ chapters
 - Total financial aid disbursed `[DATA NEEDED]`
 - Total raised via fundraising `[DATA NEEDED]`
-- Optional: quarter-over-quarter deltas vs. Q1 (↑/↓ badges in sys-green/red)
+- Optional: quarter-over-quarter deltas vs. QY (Y being previous quarter) (↑/↓ badges in sys-green/red)
 
 ### 5.2 Q2 Income & Expense Breakdown
 - Income by category (Event Registrations, Merchandise, Fundraising, Donations, Transfers) — table + chart. `[DATA NEEDED: category totals]`
