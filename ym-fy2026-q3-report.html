@@ -706,18 +706,16 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
       <div class="rule"></div>
     </div>
 
-    <div class="cards rv">
+    <div class="cards rv" style="grid-template-columns:1fr">
 
       <article class="evt">
         <span class="tag">NER</span>
         <h3>Northeast Retreat</h3>
         <p>[DATA NEEDED: 1-sentence description of NER — where it was, what made it special this year.]</p>
-        <div class="trio">
+        <div class="trio" style="grid-template-columns:repeat(5,1fr)">
           <div class="cell"><b>[PENDING]</b><span>Attendees</span></div>
           <div class="cell"><b>[PENDING]</b><span>Sisters Aided</span></div>
           <div class="cell"><b>[PENDING]</b><span>Sessions</span></div>
-        </div>
-        <div class="trio" style="margin-top:9px;grid-template-columns:1fr 1fr">
           <div class="cell"><b>$27,260</b><span>Registration Income</span></div>
           <div class="cell"><b>$38,774</b><span>Total Expenses</span></div>
         </div>
@@ -727,23 +725,11 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
         <span class="tag">PAD</span>
         <h3>Muslim Advocacy Day</h3>
         <p>[DATA NEEDED: 1-sentence description of PAD — framing it as a civic engagement opportunity and what sisters experienced.]</p>
-        <div class="trio">
+        <div class="trio" style="grid-template-columns:repeat(4,1fr)">
           <div class="cell"><b>[PENDING]</b><span>Attendees</span></div>
           <div class="cell"><b>[PENDING]</b><span>Sisters Aided</span></div>
           <div class="cell"><b>[PENDING]</b><span>Meetings</span></div>
-        </div>
-        <div class="trio" style="margin-top:9px;grid-template-columns:1fr">
           <div class="cell"><b>$1,248</b><span>Total Expenses</span></div>
-        </div>
-      </article>
-
-      <!-- [DATA NEEDED: add a third card if any other Q3 national initiative applies — e.g., west region retreat conversations or a one-off national event; otherwise remove this card] -->
-      <article class="evt">
-        <span class="tag">[DATA NEEDED]</span>
-        <h3>[DATA NEEDED: Event Name]</h3>
-        <p>[DATA NEEDED: 1-sentence description.]</p>
-        <div class="trio">
-          <div class="cell"><b>[PENDING]</b><span>[DATA NEEDED: stat label]</span></div>
         </div>
       </article>
 
@@ -927,38 +913,88 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     <div class="sec-head rv">
       <div class="eyebrow">Section 06</div>
       <h2 class="display">Finance Audits</h2>
-      <div class="sub">A look at the NN audits we conducted this quarter.</div>
+      <div class="sub">13 NNs and SRs. One quarter. A lot learned.</div>
       <div class="rule"></div>
     </div>
 
-    <p class="lede rv" style="margin-bottom:28px">A finance audit is a structured walkthrough of an NN's QuickBooks dashboard with a member of the National Finance team. We review categorisation, balances, outstanding items, and answer any questions &mdash; it takes about 30 minutes and leaves every NN with a clearer picture of where they stand.</p>
+    <p class="lede rv" style="margin-bottom:28px">A finance audit is a 30-minute call with the National Finance team &mdash; we walk through your QuickBooks dashboard together, fix what needs fixing, and answer questions in real time. This quarter we did 13 of them.</p>
 
-    <!-- San Antonio spotlight -->
-    <div class="spot rv">
-      <span class="mk">&#10022;</span>
-      <h3>San Antonio NNIT reads the handbook &mdash; and takes action</h3>
-      <p>The San Antonio NeighborNet proactively reached out after reading the NN Finance Handbook and requested an audit on their own initiative. This is exactly what the handbook was designed to encourage &mdash; sisters discovering resources they didn't know existed and taking the first step. [DATA NEEDED: any outcome details or quote from the San Antonio NNIT.]</p>
+    <div class="note jade rv" style="margin-bottom:32px">
+      <strong>The big picture:</strong> Most NNs were genuinely trying to manage money responsibly &mdash; they just didn&rsquo;t always have the access, training, or processes to keep their dashboards current. The audits helped most when we worked through real situations together on the call.
     </div>
 
-    <!-- Audit summary -->
-    <div class="stats rv" style="margin:32px 0">
+    <!-- Audit summary stats -->
+    <div class="stats rv" style="margin:0 0 36px">
       <div class="stat b-jade">
-        <div class="stat-k">Audits Conducted (Q3)</div>
-        <div class="stat-v">[PENDING]</div>
-        <div class="stat-f"></div>
+        <div class="stat-k">Audit Notes Reviewed</div>
+        <div class="stat-v" data-count="13">13</div>
+        <div class="stat-f">Q3 2026</div>
       </div>
       <div class="stat">
-        <div class="stat-k">NNs / SRs Audited</div>
-        <div class="stat-v">[PENDING]</div>
-        <div class="stat-f"></div>
+        <div class="stat-k">NNs Audited</div>
+        <div class="stat-v" data-count="12">12</div>
+        <div class="stat-f">+ 1 SR</div>
       </div>
     </div>
-    <!-- [DATA NEEDED: list which NNs/SRs received audits this quarter] -->
-    <div class="note brass rv">[DATA NEEDED: brief list or description of which NNs and SRs received audits in Q3.]</div>
+
+    <!-- What kept coming up -->
+    <h3 class="rv" style="margin:0 0 18px;font-size:20px;color:var(--forest)">What kept coming up:</h3>
+    <div class="stats rv" style="margin:0 0 36px">
+      <div class="stat b-brass">
+        <div class="stat-k">Had unlogged income or expenses</div>
+        <div class="stat-v">12 <small style="font-size:0.45em;font-weight:700;opacity:0.7">of 13</small></div>
+        <div class="stat-f">most common finding</div>
+      </div>
+      <div class="stat">
+        <div class="stat-k">Finance work fell to one person</div>
+        <div class="stat-v">7 <small style="font-size:0.45em;font-weight:700;opacity:0.7">of 13</small></div>
+        <div class="stat-f">Shared access = shared responsibility</div>
+      </div>
+      <div class="stat">
+        <div class="stat-k">Shura members needed dashboard access</div>
+        <div class="stat-v">10 <small style="font-size:0.45em;font-weight:700;opacity:0.7">of 13</small></div>
+        <div class="stat-f">Access was granted live on most of those calls</div>
+      </div>
+      <div class="stat">
+        <div class="stat-k">Reimbursements needed follow-up</div>
+        <div class="stat-v">6 <small style="font-size:0.45em;font-weight:700;opacity:0.7">of 13</small></div>
+        <div class="stat-f">Several were processed right on the call</div>
+      </div>
+      <div class="stat">
+        <div class="stat-k">Hesitation about spending &amp; asking for support</div>
+        <div class="stat-v">5 <small style="font-size:0.45em;font-weight:700;opacity:0.7">of 13</small></div>
+        <div class="stat-f">The funds are there &mdash; ask about them</div>
+      </div>
+    </div>
+
+    <!-- Learnings: for NNs -->
+    <h3 class="rv" style="margin:0 0 18px;font-size:20px;color:var(--forest)">For NNs:</h3>
+    <div class="note jade rv" style="margin-bottom:20px">
+      <ul style="margin:0;padding-left:18px;line-height:2">
+        <li><strong>Share the knowledge.</strong> Every shura member should have dashboard access and know how to submit a JotForm. Practice together &mdash; and pass it on when leadership changes.</li>
+        <li><strong>Record everything.</strong> Income, expenses, small purchases, masjid-funded items &mdash; log it all. Save receipts with the event name and date.</li>
+        <li><strong>Check what you actually have.</strong> Count your cash and compare it to the dashboard regularly. Ask Finance about any differences.</li>
+        <li><strong>Don&rsquo;t leave a teammate out of pocket.</strong> Submit expense requests promptly, follow up if a reimbursement hasn&rsquo;t come through, and ask about an advance if paying upfront would be hard.</li>
+        <li><strong>Plan shared events before they happen.</strong> Agree who records what before the event &mdash; splitting income and expenses after the fact is where most of the confusion we saw came from.</li>
+        <li><strong>Ask early and often.</strong> After your audit we create a WhatsApp thread with your NN and National Finance &mdash; use it. You don&rsquo;t have to figure it out alone.</li>
+        <li><strong>Rely less on cash.</strong> Store funds in the YM bank account and request electronic reimbursements whenever possible.</li>
+      </ul>
+    </div>
+
+    <!-- Learnings: for SRs & National Finance -->
+    <h3 class="rv" style="margin:0 0 18px;font-size:20px;color:var(--forest)">For SRs &amp; National Finance:</h3>
+    <div class="note brass rv" style="margin-bottom:32px">
+      <ul style="margin:0;padding-left:18px;line-height:2">
+        <li><strong>Make onboarding hands-on.</strong> Every shura member should practice &mdash; not just watch. Cover dashboard access, who holds the funds, how to submit income and expenses, and where to ask for help.</li>
+        <li><strong>Build in regular SR check-ins.</strong> A lightweight monthly check catches missing forms, balance questions, and reimbursement gaps before they need a national audit.</li>
+        <li><strong>Give National and SR check-ins different jobs.</strong> SR finance leads handle ongoing local support; National Finance focuses on onboarding new NNs and auditing where there are harder issues. This keeps both from being stretched thin.</li>
+        <li><strong>Make the handbook easy to find.</strong> NNs who read the NN Finance Handbook before their audit had noticeably fewer issues. Encourage every NNIT to read it at onboarding &mdash; and revisit it when questions come up.</li>
+      </ul>
+    </div>
 
     <!-- CTA -->
-    <div class="note jade rv" style="margin-top:26px">
-      <strong>Want an audit for your NN?</strong> Reach out at <a href="mailto:finance@ymsisters.com" style="color:var(--forest);font-weight:700">finance@ymsisters.com</a> with your NN name and we&rsquo;ll get you on the schedule. The NN Finance Handbook at <a href="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" target="_blank" rel="noopener" style="color:var(--forest);font-weight:700">ymsisters.com</a> is also a great place to start if you have questions before reaching out.
+    <div class="note butter rv" style="margin-top:18px">
+      <strong>Want an audit for your NN?</strong> Email <a href="mailto:finance@ymsisters.com" style="color:var(--forest);font-weight:700">finance@ymsisters.com</a> with your NN name and we&rsquo;ll get you on the schedule.
     </div>
   </div>
 </section>
@@ -974,13 +1010,8 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
     </div>
 
     <h3 class="rv" style="margin:0 0 18px;font-size:20px;color:var(--forest)">Updates (as of 2026 Q3 end):</h3>
-    <div class="rv" id="accUpdates">
-      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">1</span><span class="acc-t">SR Finance Handbook is now available</span><span class="pill up">New</span><span class="acc-x">+</span></button>
-        <div class="acc-p"><div class="acc-p-in">The SR Finance Handbook is now live &mdash; a step-by-step guide for SubRegional Finance Coordinators covering reporting, QuickBooks, JotForms, and financial aid. <a href="[DATA NEEDED: SR handbook URL]" target="_blank" rel="noopener">[DATA NEEDED: SR handbook URL]</a><br><br>Written documentation is working: sisters are finding these resources, discovering financial aid that was always available to them, and asking sharper questions. The more SRFCs and NNITs read these handbooks, the less time we all spend on back-and-forth.</div></div></div>
-
-      <div class="acc"><button class="acc-btn" aria-expanded="false"><span class="acc-n">2</span><span class="acc-t">NN Finance Handbook &mdash; reminder &amp; re-link</span><span class="acc-x">+</span></button>
-        <div class="acc-p"><div class="acc-p-in">The NN Finance Handbook launched in Q2 and is available at <a href="https://ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html" target="_blank" rel="noopener">ymsisters.com/wp-content/uploads/2026/09/ym-nn-finances-handbook.html</a>. If your NNIT hasn&rsquo;t read it yet, this quarter is a great time to start &mdash; San Antonio read it and immediately requested an audit (see Section 06).</div></div></div>
-    </div>
+    <!-- [DATA NEEDED: add Q3 updates — SR handbook URL, any policy changes, new resources, etc.] -->
+    <div class="note brass rv" style="margin-bottom:32px">[DATA NEEDED: updates to fill in before publishing — SR Finance Handbook link, NN handbook re-link, any Q3 policy notes.]</div>
 
     <!-- Friendly Reminders — evergreen standing policy reminders; rotate in/out based on what's causing friction this quarter -->
     <h3 class="rv" style="margin:40px 0 18px;font-size:20px;color:var(--forest)">Friendly reminders:</h3>
@@ -1000,11 +1031,9 @@ footer .fine{font-size:12px;color:rgba(255,255,255,.45);margin-top:14px}
       <!-- [DATA NEEDED: add or swap in reminders relevant to Q3 friction points; remove items that are no longer issues] -->
     </div>
 
-    <!-- [DATA NEEDED: update quiz questions to reflect Q3 updates and reminders.
-         Keep 3–5 questions. Format: {q, o:[options], a:index_of_correct_answer, f:feedback_text}] -->
+    <!-- [DATA NEEDED: update quiz questions for Q3 before publishing] -->
     <h3 class="rv" style="margin:48px 0 8px;font-size:20px;color:var(--forest)">Quick check &mdash; how well do you know the policies?</h3>
-    <p class="rv" style="color:var(--ink-2);margin-bottom:20px">We can't see your scores at all so don't worry about getting it right the first time. This is just for you to practice!</p>
-    <div class="quiz rv" id="quiz"></div>
+    <div class="note brass rv">[DATA NEEDED: quiz questions to fill in before publishing.]</div>
   </div>
 </section>
 
